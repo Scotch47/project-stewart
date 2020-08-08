@@ -1,0 +1,94 @@
+$baseColor: #117BC1;
+$baseColorLoght: #569ECD;
+$baseColorTable: #E6F3FF;
+$baseFont: 'Larsseit', sans-serif;
+
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('/src/fonts/Larsseit.eot');
+    src: local('Larsseit'),
+        url('/src/fonts/Larsseit.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Larsseit.woff2') format('woff2'),
+        url('/src/fonts/Larsseit.woff') format('woff'),
+        url('/src/fonts/Larsseit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('/src/fonts/fontsLarsseit-Medium.eot');
+    src: local('Larsseit Medium'), local('Larsseit-Medium'),
+        url('/src/fonts/Larsseit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Larsseit-Medium.woff2') format('woff2'),
+        url('/src/fonts/Larsseit-Medium.woff') format('woff'),
+        url('/src/fonts/Larsseit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('/src/fonts/Larsseit-Light.eot');
+    src: local('Larsseit Light'), local('Larsseit-Light'),
+        url('/src/fonts/Larsseit-Light.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Larsseit-Light.woff2') format('woff2'),
+        url('/src/fonts/Larsseit-Light.woff') format('woff'),
+        url('/src/fonts/Larsseit-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,
+input {
+    font-family: $baseFont;
+
+}
+
+
+.input {
+    min-width: 400px;
+    height: 60px;
+    background: #F1F1F1;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+}
+
+
+button, .button {
+    background: $baseColor;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px 50px;
+    color: #fff;
+    height: 60px;
+
+
+    &:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
+     }
+
+     &:focus{
+    background: $baseColor;
+
+     }
+
+  
+}
