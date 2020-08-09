@@ -122,6 +122,8 @@ button:focus, .button:focus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .login-enter a {
@@ -129,6 +131,7 @@ button:focus, .button:focus {
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
+  margin-bottom: 15px;
 }
 
 .login-form {
