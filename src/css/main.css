@@ -90,7 +90,7 @@ button:focus, .button:focus {
           flex-direction: column;
   background-color: #000;
   color: #fff;
-  height: 100%;
+  min-height: 100vh;
   font-weight: 500;
 }
 
@@ -211,7 +211,7 @@ button:focus, .button:focus {
           flex: 0 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 0 0 30px 0;
 }
 
 .login-footer a {
