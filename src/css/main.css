@@ -92,7 +92,7 @@ button:focus, .button:focus {
 }
 
 .login-logo {
-  margin-top: 205px;
+  margin-top: 180px;
   text-align: center;
 }
 
@@ -173,18 +173,21 @@ button:focus, .button:focus {
   font-size: 18px;
 }
 
-.login-control a:first-child {
-  margin-right: 30px;
+.login-control a:nth-child(3) {
+  margin-left: 30px;
+}
+
+.login-control__line {
   position: relative;
 }
 
-.login-control a:first-child::after {
+.login-control__line::after {
   content: '';
-  width: 1px;
+  width: 2px;
   height: 15px;
   position: absolute;
-  top: 4px;
-  right: -20px;
+  top: 1px;
+  right: -15px;
   background-color: #fff;
 }
 
@@ -197,6 +200,8 @@ button:focus, .button:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 10%;
           flex: 0 0 10%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .login-footer a {
@@ -211,5 +216,73 @@ button:focus, .button:focus {
 
 .login-footer__policy a:first-child {
   margin-right: 30px;
+}
+
+.rest-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.rest-pass__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.rest-pass-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rest-pass-form__btn {
+  font-weight: 500;
+  min-width: 400px;
+  height: 60px;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.rest-pass-form__input {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #444444;
+}
+
+.rest-pass-form__input::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.rest-pass-form__input:-ms-input-placeholder {
+  color: #999999;
+}
+
+.rest-pass-form__input::-ms-input-placeholder {
+  color: #999999;
+}
+
+.rest-pass-form__input::placeholder {
+  color: #999999;
+}
+
+.error-pass {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #C11C11;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
