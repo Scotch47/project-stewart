@@ -12,30 +12,179 @@
 
 <body>
     <main class="login-page">
-        <div class="login container">
-            <div class="login-logo">
-                <img src="../../src/img/big_logo.svg" alt="reg_logo">
-            </div>
+        <div class="login reg-block">
+            <div class="row reg-block-top">
+                <div class="col l3 offset-l4 login-logo__small">
+                    <a href="#"> <img src="../../src/img/small_logo.svg" alt="small_logo"></a>
 
-            <div class="rest-pass">
-                <h5 class="rest-pass__title">Forgot Password</h5>
-                <form action="#" class="rest-pass-form">
-                    <input type="email" class="browser-default input rest-pass-form__input"
-                        placeholder="User Name or Email address">
-                    <input type="button" value="Email me a recovery link" class="button rest-pass-form__btn">
-                </form>
-                <div class="login-control">
-                    <a href="#">Back</a>
                 </div>
 
-                <div class="row">
-                    <p class="error-pass col l6 offset-l3">Your User Name or email address has not been recognised.
-                        Please
-                        double check and try again. If you continue to have problems, please contact info@cinema101.guru
-                    </p>
+                <div class="col l2 s4 offset-l3">
+                    <select name="#" id="" class="browser-default">
+                        <option value="123">English</option>
+                    </select>
                 </div>
-                
             </div>
+
+            <div class="row register">
+                <div class="col l4 dealer-wrap">
+                    <div class="file-field input-field dealer-upload">
+                        <div class="dealer-wrap__logo">
+
+                            <img id="file_upload" width="233" height="233" src="../../src/img/choose-logo.png"
+                                alt="choose-logo" class="upload-img image-auto">
+                            <p>Upload company logo</p>
+
+                            <input type='file' onchange="readURL(this);" />
+
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate  browser-default upload" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dealer-wrap__info">
+                        <form action="#" class="dealer-form">
+                            <label for="dealerId">Dealer ID
+                                <input type="text" name="dealer" id="dealerId"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <input type="button" value="Validate" class="dealer-form__btn button">
+
+                            <label for="usertTupe">User Type
+                                <input type="text" name="usertTupe" id="usertTupe"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="segment">Segment
+                                <input type="text" name="segment" id="segment"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col l4 company-wrap">
+                    <h4 class="company-wrap__title">
+                        Company
+                    </h4>
+
+                    <div class="dealer-wrap__info">
+                        <form action="#" class="dealer-form">
+                            <label for="dealerId">Dealer ID
+                                <input type="text" name="dealer" id="dealerId"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <input type="text" name="usertTupe" id="usertTupe"
+                                class="dealer-form__input browser-default">
+
+                            <input type="text" name="segment" id="segment" class="dealer-form__input browser-default">
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+                <div class="col l4 user-wrap">
+
+                    <h4 class="user-wrap__title">
+                        User Profile
+                    </h4>
+
+                    <div class="dealer-wrap__info">
+                        <form action="#" class="dealer-form">
+                            <label for="dealerId">Dealer ID
+                                <input type="text" name="dealer" id="dealerId"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                           
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+
+                            <label for="validation">Validation
+                                <input type="text" name="validation" id="validation"
+                                    class="dealer-form__input browser-default">
+                            </label>
+                      
+
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
         </div>
 
         <div class="login-footer">
@@ -51,6 +200,9 @@
         </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../../src/js/main.js"></script>
 
     <script src="../../src/js/materialize.min.js"></script>
 </body>

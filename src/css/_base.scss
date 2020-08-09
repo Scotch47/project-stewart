@@ -46,6 +46,9 @@ $baseFont: 'Larsseit', sans-serif;
     box-sizing: border-box;
 }
 
+body{
+    height: 100%;
+}
 
 body,
 input {
@@ -91,4 +94,9 @@ button, .button {
      }
 
   
+}
+
+.image-auto{
+    max-width: 100%;
+    height: auto;
 }

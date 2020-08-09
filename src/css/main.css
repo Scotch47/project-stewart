@@ -29,6 +29,10 @@
           box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+}
+
 body,
 input {
   font-family: "Larsseit", sans-serif;
@@ -71,6 +75,11 @@ button:focus, .button:focus {
   background: #117BC1;
 }
 
+.image-auto {
+  max-width: 100%;
+  height: auto;
+}
+
 .login-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,14 +90,14 @@ button:focus, .button:focus {
           flex-direction: column;
   background-color: #000;
   color: #fff;
-  height: 100vh;
+  height: 100%;
   font-weight: 500;
 }
 
 .login {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 80%;
-          flex: 1 0 80%;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .login-logo {
@@ -198,10 +207,11 @@ button:focus, .button:focus {
   width: 95%;
   margin: auto;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 10%;
-          flex: 0 0 10%;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 30px 0;
 }
 
 .login-footer a {
@@ -216,6 +226,10 @@ button:focus, .button:focus {
 
 .login-footer__policy a:first-child {
   margin-right: 30px;
+}
+
+.login-logo__small {
+  text-align: right;
 }
 
 .rest-pass {
@@ -284,5 +298,76 @@ button:focus, .button:focus {
   text-align: center;
   color: #C11C11;
   margin-top: 10px;
+}
+
+.reg-block {
+  margin-top: 40px;
+}
+
+.reg-block-top {
+  width: 95%;
+  margin: auto;
+}
+
+.register {
+  margin-top: 60px;
+  max-width: 90%;
+}
+
+.dealer-upload {
+  width: 233px;
+}
+
+.dealer-wrap__logo p {
+  margin-left: 30px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.upload {
+  display: none;
+}
+
+.label-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dealer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.dealer-form label {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dealer-form__btn {
+  min-width: 190px;
+}
+
+.dealer-form__input {
+  min-width: 300px;
+  height: 60px;
+  background: #FFFFFF;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
