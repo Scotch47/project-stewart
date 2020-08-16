@@ -49,7 +49,8 @@ input {
   border: none;
 }
 
-button, .button {
+button,
+.button {
   background: #117BC1;
   border-radius: 15px;
   display: inline-block;
@@ -64,15 +65,22 @@ button, .button {
   height: 60px;
 }
 
-button:active, .button:active {
+button:active,
+.button:active {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
   -webkit-filter: saturate(150%);
           filter: saturate(150%);
 }
 
-button:focus, .button:focus {
+button:focus,
+.button:focus {
   background: #117BC1;
+}
+
+.disabled-btn {
+  color: #333333;
+  background: #999999;
 }
 
 .image-auto {
@@ -220,6 +228,10 @@ button:focus, .button:focus {
 
 .login-footer a {
   color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .login-footer__copy {
@@ -305,7 +317,7 @@ button:focus, .button:focus {
 }
 
 .reg-block {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .reg-block-top {
@@ -314,12 +326,20 @@ button:focus, .button:focus {
 }
 
 .register {
-  margin-top: 60px;
+  margin-top: 20px;
   max-width: 90%;
 }
 
 .dealer-upload {
   width: 233px;
+}
+
+.dealer-wrap {
+  margin-right: 70px;
+}
+
+.dealer-wrap__logo {
+  margin-bottom: 65px;
 }
 
 .dealer-wrap__logo p {
@@ -332,13 +352,125 @@ button:focus, .button:focus {
   display: none;
 }
 
-.label-wrap {
+.dealer-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.dealer-form {
+.dealer-row label {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+.dealer-row--btn {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dealer-row--input {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.form-register__btn {
+  padding: 17px 55px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.form-register__input {
+  background: #FFFFFF;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  height: 60px;
+  margin-bottom: 20px;
+  border: none;
+  width: 100%;
+  padding: 23px 20px 17px 20px;
+}
+
+.reg-disabled {
+  background: #D1D1D1;
+}
+
+.company-wrap {
+  margin-left: 50px;
+  margin-right: 70px;
+}
+
+.company-row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.input-block--contact input:nth-child(2) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  margin-right: 20px;
+}
+
+.label-zip,
+.label-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.label-zip input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  margin-right: 20px;
+}
+
+.label-state input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.input-block--contact::nth-child(3) {
+  margin-left: 30px;
+}
+
+.user-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,32 +478,17 @@ button:focus, .button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 700px;
 }
 
-.dealer-form label {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 20px;
-  color: #FFFFFF;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.btn-step {
+  text-align: right;
 }
 
-.dealer-form__btn {
-  min-width: 190px;
-}
-
-.dealer-form__input {
-  min-width: 300px;
-  height: 60px;
-  background: #FFFFFF;
-  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
-          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
-  border-radius: 15px;
-  margin-bottom: 20px;
+.btn-step a:first-child {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

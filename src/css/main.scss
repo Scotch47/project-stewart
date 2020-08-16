@@ -4,254 +4,346 @@
 // login page
 
 .login-page {
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    color: #fff;
-    min-height: 100vh;
-    font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	color: #fff;
+	min-height: 100vh;
+	font-weight: 500;
 }
 
 
 .login {
-    flex: 1 0 auto;
+	flex: 1 0 auto;
 
-    &-logo {
-        margin-top: 180px;
-        text-align: center;
+	&-logo {
+		margin-top: 180px;
+		text-align: center;
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    }
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
 
-    &-form-wrap {
-        margin-top: 100px;
-    }
+	&-form-wrap {
+		margin-top: 100px;
+	}
 
-    // login enter
-    &-enter {
-        margin-top: 150px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+	// login enter
+	&-enter {
+		margin-top: 150px;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
 
-        a {
-            min-width: 305px;
-            font-weight: 500;
-            font-size: 28px;
-            line-height: 1;
-            margin-bottom: 15px;
-            
-        }
+		a {
+			min-width: 305px;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 1;
+			margin-bottom: 15px;
 
-
-    }
+		}
 
 
+	}
 
 
-    &-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 28px;
 
 
-        &__btn {
-            font-weight: 500;
-            min-width: 400px;
-            height: 60px;
-            line-height: 1;
-        }
-
-        &__input {
-            margin-bottom: 20px;
-            color: #444444;
-
-            &::placeholder {
-                color: #999999;
-            }
-        }
-    }
-
-    &-control {
-        margin-top: 7px;
-        text-align: center;
-
-        a {
-            color: #fff;
-            font-size: 18px;
-        }
-
-        a:nth-child(3) {
-            margin-left: 30px;
+	&-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 28px;
 
 
-        }
+		&__btn {
+			font-weight: 500;
+			min-width: 400px;
+			height: 60px;
+			line-height: 1;
+		}
 
-        &__line {
-            position: relative;
+		&__input {
+			margin-bottom: 20px;
+			color: #444444;
 
-            &::after {
-                content: '';
-                width: 2px;
-                height: 15px;
-                position: absolute;
-                top: 1px;
-                right: -15px;
-                background-color: #fff;
-            }
-        }
+			&::placeholder {
+				color: #999999;
+			}
+		}
+	}
+
+	&-control {
+		margin-top: 7px;
+		text-align: center;
+
+		a {
+			color: #fff;
+			font-size: 18px;
+		}
+
+		a:nth-child(3) {
+			margin-left: 30px;
 
 
-    }
+		}
+
+		&__line {
+			position: relative;
+
+			&::after {
+				content: '';
+				width: 2px;
+				height: 15px;
+				position: absolute;
+				top: 1px;
+				right: -15px;
+				background-color: #fff;
+			}
+		}
 
 
-    &-footer {
-        display: flex;
-        width: 95%;
-        margin: auto;
-        flex: 0 0 auto;
-        flex-wrap: wrap;
-        padding: 0 0 30px 0;
+	}
 
-        a {
-            color: #fff;
-        }
 
-        &__copy {
-            flex: 1;
-        }
+	&-footer {
+		display: flex;
+		width: 95%;
+		margin: auto;
+		flex: 0 0 auto;
+		flex-wrap: wrap;
+		padding: 0 0 30px 0;
 
-        &__policy {
+		a {
+			color: #fff;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+		}
 
-            a:first-child {
-                margin-right: 30px;
-            }
+		&__copy {
+			flex: 1;
+		}
 
-        }
-    }
+		&__policy {
 
-    &-logo__small {
-        text-align: right;
-    }
+			a:first-child {
+				margin-right: 30px;
+			}
+
+		}
+	}
+
+	&-logo__small {
+		text-align: right;
+	}
 
 }
 
 //login forg pass
 
 .rest-pass {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
 
-    &__title {
-        text-align: center;
-        margin-bottom: 35px;
-    }
+	&__title {
+		text-align: center;
+		margin-bottom: 35px;
+	}
 
-    &-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+	&-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-        &__btn {
-            font-weight: 500;
-            min-width: 400px;
-            height: 60px;
-            font-size: 28px;
-            line-height: 1;
-        }
+		&__btn {
+			font-weight: 500;
+			min-width: 400px;
+			height: 60px;
+			font-size: 28px;
+			line-height: 1;
+		}
 
-        &__input {
-            margin-bottom: 20px;
-            font-size: 28px;
-            color: #444444;
+		&__input {
+			margin-bottom: 20px;
+			font-size: 28px;
+			color: #444444;
 
-            &::placeholder {
-                color: #999999;
-            }
-        }
-    }
+			&::placeholder {
+				color: #999999;
+			}
+		}
+	}
 }
 
 .error-pass {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    color: #C11C11;
-    margin-top: 10px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #C11C11;
+	margin-top: 10px;
 
 }
 
 
-// register
+@import '_login_in_register';
+
 .reg-block {
-    margin-top: 40px;
+	margin-top: 30px;
 
-    &-top {
-        width: 95%;
-        margin: auto;
+	&-top {
+		width: 95%;
+		margin: auto;
 
-    }
+	}
 
 }
 
 .register {
-    margin-top: 60px;
-    max-width: 90%;
+	margin-top: 20px;
+	max-width: 90%;
 }
 
-.dealer-upload{
-width: 233px;
+.dealer-upload {
+	width: 233px;
+
 }
 
-.dealer-wrap__logo {
-    p {
-        margin-left: 30px;
-        font-weight: 300;
-        font-size: 20px;
-    }
+
+.dealer-wrap {
+	margin-right: 70px;
+
+	&__logo {
+		margin-bottom: 65px;
+		p {
+			margin-left: 30px;
+			font-weight: 300;
+			font-size: 20px;
+		}
+	}
 }
 
 .upload {
-    display: none;
+	display: none;
 }
 
-.label-wrap{
-    display: flex;
-}
 
-.dealer-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.dealer-row {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
 
-    label {
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 20px;
-        color: #FFFFFF;
-        flex: 1;
-    }
 
-    &__btn {
-        min-width: 190px;
-    }
+	label {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 20px;
+		color: #FFFFFF;
+		flex: 1 0 30%;
+	}
 
-    &__input {
-        min-width: 300px;
-        height: 60px;
-        background: #FFFFFF;
-        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
-        border-radius: 15px;
-        margin-bottom: 20px;
+	&--btn {
+		justify-content: flex-end;
+	}
 
-        
-    }
+	&--input {
+		align-items: baseline;
+	}
+
+
 
 }
 
+.form-register__btn {
+	padding: 17px 55px;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+
+.form-register__input {
+	background: #FFFFFF;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+	border-radius: 15px;
+	height: 60px;
+	margin-bottom: 20px;
+	border: none;
+	width: 100%;
+	padding: 23px 20px 17px 20px;
+
+}
+
+.reg-disabled {
+	background: #D1D1D1;
+}
+
+
+
+.company-wrap {
+	margin-left: 50px;
+	margin-right: 70px;
+
+}
+
+.company-row {
+	justify-content: space-between;
+}
+
+.input-block {
+	display: flex;
+	justify-content: start;
+	align-items: baseline;
+	
+
+	&--contact input:nth-child(2){
+		flex: 0 0 10%;
+		margin-right: 20px;
+		}
+}
+
+
+.label-zip,
+.label-state {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+
+}
+
+.label-zip input {
+	flex: 0 0 40%;
+	margin-right: 20px;
+}
+
+.label-state input {
+	flex: 0 0 60%;
+}
+
+.input-block--contact::nth-child(3){
+margin-left: 30px;
+}
+
+
+.user-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 700px;
+
+}
+
+.btn-step{
+	text-align: right;
+
+	a:first-child{
+		margin-right: 20px;
+	}
+}

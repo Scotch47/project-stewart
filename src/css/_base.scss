@@ -1,7 +1,8 @@
 $baseColor: #117BC1;
 $baseColorLoght: #569ECD;
 $baseColorTable: #E6F3FF;
-$baseFont: 'Larsseit', sans-serif;
+$baseFont: 'Larsseit',
+sans-serif;
 
 
 @font-face {
@@ -46,7 +47,7 @@ $baseFont: 'Larsseit', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100%;
 }
 
@@ -68,7 +69,8 @@ input {
 }
 
 
-button, .button {
+button,
+.button {
     background: $baseColor;
     border-radius: 15px;
     display: inline-block;
@@ -86,17 +88,23 @@ button, .button {
     &:active {
         transform: translateY(1px);
         filter: saturate(150%);
-     }
+    }
 
-     &:focus{
-    background: $baseColor;
+    &:focus {
+        background: $baseColor;
 
-     }
+    }
 
-  
+
 }
 
-.image-auto{
+.disabled-btn {
+    color: #333333;
+    background: #999999;
+}
+
+
+.image-auto {
     max-width: 100%;
     height: auto;
 }

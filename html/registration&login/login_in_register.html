@@ -2,209 +2,222 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../src/css/main.css">
-    <title>Login_in_forgot_pass</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../src/css/main.css">
+	<title>Login_in_forgot_pass</title>
 </head>
 
 <body>
-    <main class="login-page">
-        <div class="login reg-block">
-            <div class="row reg-block-top">
-                <div class="col l3 offset-l4 login-logo__small">
-                    <a href="#"> <img src="../../src/img/small_logo.svg" alt="small_logo"></a>
+	<main class="login-page">
+		<div class="login reg-block">
+			<div class="row reg-block-top">
+				<div class="col l3 offset-l4 login-logo__small">
+					<a href="#"> <img src="../../src/img/small_logo.svg" alt="small_logo"></a>
 
-                </div>
+				</div>
 
-                <div class="col l2 s4 offset-l3">
-                    <select name="#" id="" class="browser-default">
-                        <option value="123">English</option>
-                    </select>
-                </div>
-            </div>
+				<div class="col l2 s4 offset-l3">
+					<select name="#" id="" class="browser-default">
+						<option value="123">English</option>
+						<option value="123">Russian</option>
+					</select>
+				</div>
+			</div>
 
-            <div class="row register">
-                <div class="col l4 dealer-wrap">
-                    <div class="file-field input-field dealer-upload">
-                        <div class="dealer-wrap__logo">
+			<div class="row register">
+				<form action="#" class="form-register">
+					<div class="col l3 dealer-wrap">
+						<div class="file-field input-field dealer-upload">
+							<div class="dealer-wrap__logo">
 
-                            <img id="file_upload" width="233" height="233" src="../../src/img/choose-logo.png"
-                                alt="choose-logo" class="upload-img image-auto">
-                            <p>Upload company logo</p>
+								<img id="file_upload" width="233" height="233" src="../../src/img/choose-logo.png" alt="choose-logo"
+									class="upload-img image-auto">
+								<p>Upload company logo</p>
 
-                            <input type='file' onchange="readURL(this);" />
+								<input type='file' onchange="readURL(this);" />
+								<div class="file-path-wrapper">
+									<input class="file-path validate  browser-default upload" type="text">
+								</div>
+							</div>
+						</div>
 
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate  browser-default upload" type="text">
-                            </div>
-                        </div>
-                    </div>
+						<div class="dealer-wrap__info">
+							<div class="dealer-row dealer-row--valid">
+								<label for="dealerId">Dealer ID</label>
+								<input type="text" name="dealer" id="dealerId" class="form-register__input browser-default">
+							</div>
+							<div class="dealer-row ">
+								<label for="validation">Validation</label>
+								<input type="text" name="validation" id="validation" class="form-register__input browser-default">
+							</div>
+							<div class="dealer-row dealer-row--btn">
+								<input type="button" value="Validate" class="form-register__btn button">
 
-                    <div class="dealer-wrap__info">
-                        <form action="#" class="dealer-form">
-                            <label for="dealerId">Dealer ID
-                                <input type="text" name="dealer" id="dealerId"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <input type="button" value="Validate" class="dealer-form__btn button">
-
-                            <label for="usertTupe">User Type
-                                <input type="text" name="usertTupe" id="usertTupe"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="segment">Segment
-                                <input type="text" name="segment" id="segment"
-                                    class="dealer-form__input browser-default">
-                            </label>
+							</div>
 
 
-                        </form>
+							<div class="dealer-row">
+								<label for="usertTupe">User Type</label>
+								<input type="text" name="usertTupe" id="usertTupe"
+									class="form-register__input browser-default reg-disabled">
+							</div>
+							<div class="dealer-row">
+								<label for="segment">Segment</label>
+								<input type="text" name="segment" id="segment"
+									class="form-register__input browser-default reg-disabled">
+
+							</div>
 
 
-                    </div>
+						</div>
 
-                </div>
+					</div>
 
-                <div class="col l4 company-wrap">
-                    <h4 class="company-wrap__title">
-                        Company
-                    </h4>
+					<div class="col l4  company-wrap">
+						<h4 class="company-title">Company</h4>
 
-                    <div class="dealer-wrap__info">
-                        <form action="#" class="dealer-form">
-                            <label for="dealerId">Dealer ID
-                                <input type="text" name="dealer" id="dealerId"
-                                    class="dealer-form__input browser-default">
-                            </label>
+						<div class="dealer-row company-row">
+							<label for="companyName">Company name</label>
+							<input type="text" name="companyName" id="companyName"
+								class="form-register__input browser-default reg-disabled">
+						</div>
 
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
+						<div class="dealer-row dealer-row--input">
+							<label for="Address">Address</label>
 
-                            <input type="text" name="usertTupe" id="usertTupe"
-                                class="dealer-form__input browser-default">
+							<div class="inp-group">
+								<input type="text" name="Address" id="Address"
+									class="form-register__input browser-default reg-disabled">
+								<input type="text" name="Address" id="Address"
+									class="form-register__input browser-default reg-disabled">
+								<input type="text" name="" id="#" class="form-register__input browser-default reg-disabled">
+							</div>
+						</div>
 
-                            <input type="text" name="segment" id="segment" class="dealer-form__input browser-default">
+						<div class="dealer-row">
+							<div class="input-block">
+								<label for="zipPost" class="label-zip">Zip/Post code
+									<input type="text" name="zipPost" id="zipPost"
+										class="form-register__input browser-default reg-disabled"></label>
+							</div>
 
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
+							<div class="input-block">
+								<label for="State" class="label-state">State
+									<input type="text" name="State" id="State"
+										class="form-register__input browser-default reg-disabled"></label>
+							</div>
 
 
+						</div>
+						<div class="dealer-row">
+							<label for="Country">Country</label>
+							<select name="Country" id="Country" class="browser-default form-register__input reg-disabled">
+								<option value="1">English</option>
+								<option value="2">German</option>
+								<option value="3">Russian</option>
 
-                        </form>
-
-
-                    </div>
-
-                </div>
-                <div class="col l4 user-wrap">
-
-                    <h4 class="user-wrap__title">
-                        User Profile
-                    </h4>
-
-                    <div class="dealer-wrap__info">
-                        <form action="#" class="dealer-form">
-                            <label for="dealerId">Dealer ID
-                                <input type="text" name="dealer" id="dealerId"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                           
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
+							</select>
+						</div>
+						<div class="dealer-row">
+							<div class="input-block input-block--contact">
+								<label for="contactNum">Contact number</label>
+								<input type="text" name="contactNum" id="contactNum"
+									class="form-register__input browser-default reg-disabled">
+								<input type="text" name="State" id="State" class="form-register__input browser-default reg-disabled">
+							</div>
 
 
 
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
+						</div>
+						<div class="dealer-row">
+							<label for="Email">Email</label>
+							<input type="email" name="Email" id="Email" class="form-register__input browser-default reg-disabled">
+						</div>
+						<div class="dealer-row">
+							<label for="Website">Website</label>
+							<input type="text" name="Website" id="Website" class="form-register__input browser-default reg-disabled">
+						</div>
 
-                            <label for="validation">Validation
-                                <input type="text" name="validation" id="validation"
-                                    class="dealer-form__input browser-default">
-                            </label>
-                      
+					</div>
 
-                        </form>
+					<div class="col l4 user-wrap">
+						<h4 class="company-title">User Profile</h4>
+						<div class="user-container">
+							<div class="user-block">
+								<div class="dealer-row company-row">
+									<label for="companyName">First name</label>
+									<input type="text" name="firstName" id="firstName"
+										class="form-register__input browser-default reg-disabled company-wrap__inp">
+								</div>
+								<div class="dealer-row">
+									<label for="LastName">Last name</label>
+									<input type="text" name="LastName" id="LastName"
+										class="form-register__input browser-default reg-disabled">
+								</div>
+								<div class="dealer-row input-block--contact">
+									<label for="Phone">Phone number </label>
+									<input type="text" name="PhoneNumber" id="PhoneNumber"
+										class="form-register__input browser-default reg-disabled">
+									<input type="text" name="Phone" id="Phone" class="form-register__input browser-default reg-disabled">
+
+								</div>
+								<div class="dealer-row">
+									<label for="Email">Email</label>
+									<input type="email" name="Email" id="Email" class="form-register__input browser-default reg-disabled">
+								</div>
+							</div>
+
+							<div class="password-block">
+								<div class="dealer-row">
+									<label for="Password">Password</label>
+									<input type="password" name="Password" id="Password"
+										class="form-register__input browser-default reg-disabled">
+								</div>
+								<div class="dealer-row">
+									<label for="ConfPassword">Confirm password</label>
+									<input type="password" name="ConfPassword" id="ConfPassword"
+										class="form-register__input browser-default reg-disabled">
+								</div>
+							</div>
+
+							<div class="btn-step">
+								<a href="#" class="button">Back</a>
+								<a href="#" class="button disabled-btn">Next</a>
+							</div>
+						</div>
+					</div>
+			</div>
 
 
-                    </div>
-
-
-                </div>
-
-            </div>
+			</form>
+		</div>
 
 
 
 
-        </div>
+		</div>
 
-        <div class="login-footer">
-            <div class="login-footer__copy">
-                <a href="#">© Copyright 2020 Cinema101 All rights reserved
-                </a>
-            </div>
+		<div class="login-footer">
+			<div class="login-footer__copy">
+				<a href="#">© Copyright 2020 Cinema101 All rights reserved
+				</a>
+			</div>
 
-            <div class="login-footer__policy">
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-        </div>
-    </main>
+			<div class="login-footer__policy">
+				<a href="#">Terms of Use</a>
+				<a href="#">Privacy Policy</a>
+			</div>
+		</div>
+	</main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="../../src/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+	<script src="../../src/js/main.js"></script>
 
-    <script src="../../src/js/materialize.min.js"></script>
+	<script src="../../src/js/materialize.min.js"></script>
 </body>
 
 </html>
