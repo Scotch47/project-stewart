@@ -6,6 +6,7 @@
 	<link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../src/select2/css/select2.min.css">
 	<link rel="stylesheet" href="../../src/css/main.css">
 	<title>Login_in_forgot_pass</title>
 </head>
@@ -112,12 +113,16 @@
 
 
 						</div>
-						<div class="dealer-row">
+						<div class="dealer-row flag-group">
 							<label for="Country">Country</label>
-							<select name="Country" id="Country" class="browser-default form-register__input reg-disabled">
-								<option value="1">English</option>
-								<option value="2">German</option>
-								<option value="3">Russian</option>
+							<select name="Country" id="Country"
+								class="browser-default country-select form-register__input reg-disabled">
+								<option data-img_src="#" value=""></option>
+								<option data-img_src="../../src/img/state/United States.svg" value="1">United States
+								</option>
+								<option data-img_src="../../src/img/state/Argentina.svg" value="2">Argentina</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+
 
 							</select>
 						</div>
@@ -215,9 +220,11 @@
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous"></script>
+	<script src="../../src/js/materialize.min.js"></script>
+	<script src="../../src/select2/js/select2.min.js"></script>
+
 	<script src="../../src/js/main.js"></script>
 
-	<script src="../../src/js/materialize.min.js"></script>
 </body>
 
 </html>
