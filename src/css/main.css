@@ -108,8 +108,9 @@ button:focus,
 }
 
 .login-logo {
-  margin-top: 150px;
+  margin-top: 110px;
   text-align: center;
+  margin-bottom: 85px;
 }
 
 .login-logo img {
@@ -117,12 +118,7 @@ button:focus,
   height: auto;
 }
 
-.login-form-wrap {
-  margin-top: 100px;
-}
-
 .login-enter {
-  margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,9 +127,10 @@ button:focus,
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 60px;
 }
 
-.login-enter a {
+.login-enter__btn {
   min-width: 305px;
   font-weight: 500;
   font-size: 28px;
@@ -165,6 +162,7 @@ button:focus,
 .login-form__input {
   margin-bottom: 20px;
   color: #444444;
+  min-width: 400px;
 }
 
 .login-form__input::-webkit-input-placeholder {
@@ -225,7 +223,7 @@ button:focus,
   padding: 0 0 30px 0;
 }
 
-.login-footer a {
+.login-footer__link {
   color: #fff;
   font-style: normal;
   font-weight: normal;
@@ -239,8 +237,8 @@ button:focus,
           flex: 1;
 }
 
-.login-footer__policy a:first-child {
-  margin-right: 30px;
+.login-footer__policy a + a {
+  margin-left: 30px;
 }
 
 .login-logo__small {
@@ -255,7 +253,6 @@ button:focus,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
 }
 
 .rest-pass__title {
@@ -288,6 +285,8 @@ button:focus,
   margin-bottom: 20px;
   font-size: 28px;
   color: #444444;
+  min-width: 400px;
+  padding: 16px 25px;
 }
 
 .rest-pass-form__input::-webkit-input-placeholder {
@@ -333,10 +332,6 @@ button:focus,
   width: 233px;
 }
 
-.dealer-wrap {
-  margin-right: 70px;
-}
-
 .dealer-wrap__logo {
   margin-bottom: 65px;
 }
@@ -369,8 +364,8 @@ button:focus,
   line-height: 20px;
   color: #FFFFFF;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
 }
 
 .dealer-row--btn {
@@ -383,6 +378,14 @@ button:focus,
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.form-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form-register__btn {
@@ -398,20 +401,15 @@ button:focus,
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
   border-radius: 15px;
-  height: 60px;
   margin-bottom: 20px;
   border: none;
   width: 100%;
-  padding: 23px 20px 17px 20px;
+  padding: 19px;
+  height: 60px;
 }
 
 .reg-disabled {
   background: #D1D1D1;
-}
-
-.company-wrap {
-  margin-left: 50px;
-  margin-right: 70px;
 }
 
 .company-title {
@@ -438,8 +436,8 @@ button:focus,
 
 .input-block--contact input:nth-child(2) {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 10%;
-          flex: 0 0 10%;
+      -ms-flex: 0 0 12%;
+          flex: 0 0 12%;
   margin-right: 20px;
 }
 
@@ -458,9 +456,9 @@ button:focus,
 
 .label-zip input {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-  margin-right: 20px;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+  margin-right: 25px;
 }
 
 .label-state input {
@@ -481,27 +479,38 @@ button:focus,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 700px;
 }
 
-.btn-step {
-  text-align: right;
-  margin-right: 45px;
-  margin-bottom: 37px;
+.password-block {
+  margin-top: 85px;
 }
 
-.btn-step a:first-child {
-  margin-right: 20px;
+.step-button {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 17px 20px;
+  min-width: 190px;
+}
+
+.step-button + .step-button {
+  margin-left: 30px;
 }
 
 .user-profile {
   overflow-y: auto;
-  max-height: 750px;
+  max-height: 600px;
   scrollbar-color: #838383 #ffffff1f;
   scrollbar-width: auto;
+  margin-bottom: 30px;
+  padding-right: 25px;
+}
+
+.form-profile {
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .user-profile::-webkit-scrollbar {
@@ -538,8 +547,8 @@ button:focus,
   line-height: 20px;
   color: #FFFFFF;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 75%;
-          flex: 1 0 75%;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
 }
 
 .subcs-table th,
@@ -561,13 +570,17 @@ td {
   vertical-align: middle;
 }
 
-.div {
+.payment-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.block {
+.payment-label input + input {
+  margin-left: 20px;
+}
+
+.payment-int-block {
   margin-top: 77px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +596,7 @@ td {
   min-width: 778px;
 }
 
-.block h3 {
+.payment-int-block h3 {
   color: #555555;
   font-weight: normal;
   font-size: 36px;
@@ -591,7 +604,6 @@ td {
 }
 
 .payment {
-  margin-top: 80px;
   text-align: center;
 }
 
@@ -611,6 +623,17 @@ td {
   margin-bottom: 65px;
 }
 
+.payment-btn {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-width: 306px;
+}
+
+.payment-btn input + input {
+  margin-left: 20px;
+}
+
 .password-reset {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,16 +645,14 @@ td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
 }
 
 .password-reset__btn {
-  font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 28px;
-  padding: 16px 65px;
-  height: 60px;
+  padding: 16px 20px;
+  min-width: 400px;
 }
 
 .flag-group {
