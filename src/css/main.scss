@@ -5,3 +5,38 @@
 @import './login/_login_screen';
 
 @import './login/_login_in_register';
+
+
+
+
+
+.select-cust {
+  background-image: url(../img/select-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 25px;
+  appearance: none;
+
+  option {
+    background: #E6F3FF;
+    border-radius: 7px;
+  }
+
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  background: #F1F1F1;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  background-image: url(../img/input-search.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 14px;
+
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #5897fb;
+  background: #E6F3FF;
+  border-radius: 7px;
+  color: inherit;
+}
+

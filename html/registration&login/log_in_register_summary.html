@@ -21,7 +21,7 @@
 				</div>
 
 				<div class="col l2 s4 offset-l3  offset-s4 ">
-					<select name="#" id="" class="browser-default form-register__input">
+					<select name="#" id="" class="select-cust browser-default form-register__input">
 						<option value="">English</option>
 						<option value="">Russian</option>
 					</select>
@@ -36,9 +36,9 @@
 							<h4 class="company-title">Subscription</h4>
 
 							<div class="user-row">
-								<label for="licens">How many licenses do You wish to purchase?</label>
-								<select name="licens" id="licens" class="form-register__input browser-default">
-									<option value="#">5</option>
+								<label for="licens">Please choose your subscription</label>
+								<select name="licens" id="licens" class="select-cust form-register__input browser-default">
+									<option value="#">Dealer</option>
 									<option value="#">4</option>
 									<option value="#">3</option>
 								</select>
@@ -46,21 +46,30 @@
 
 							<div class="user-row">
 								<label for="plan">Choose Your preferred plan</label>
-								<select name="plan" id="plan" class="form-register__input browser-default">
-									<option value="#">1 Year</option>
-									<option value="#">2 Year</option>
-									<option value="#">3 Year</option>
+								<select name="plan" id="plan" class="select-cust form-register__input browser-default">
+									<option value="#">Annual</option>
+									<option value="#">Annual</option>
+									<option value="#">Annual</option>
 								</select>
 
 							</div>
 
 
 							<div class="user-row">
-								<label for="frequency">Choose payment frequency</label>
-								<select name="frequency" id="frequency" class="form-register__input browser-default">
+								<label for="frequency">Add file request subscription</label>
+								<select name="frequency" id="frequency" class="select-cust form-register__input browser-default">
 									<option value="#">Annual</option>
 									<option value="#">Annual 2</option>
 									<option value="#">Annual 3</option>
+								</select>
+							</div>
+
+							<div class="user-row">
+								<label for="LicenCount">How many licenses do you wish to purchase?</label>
+								<select name="LicenCount" id="LicenCount" class="select-cust form-register__input browser-default">
+									<option value="#">5</option>
+									<option value="#">4</option>
+									<option value="#">3</option>
 								</select>
 							</div>
 
@@ -91,10 +100,10 @@
 											<input type="text" name="LastName" id="LastName" class="form-register__input browser-default">
 										</div>
 										<div class="dealer-row input-block--contact">
-											<label for="Phone">Phone number </label>
-											<input type="text" name="PhoneNumber" id="PhoneNumber"
+											<label for="Contact">Contact number </label>
+											<input type="text" name="ContactNumber" id="ContactNumber"
 												class="form-register__input browser-default">
-											<input type="text" name="Phone" id="Phone" class="form-register__input browser-default">
+											<input type="text" name="Contact" id="Contact" class="form-register__input browser-default">
 
 										</div>
 										<div class="dealer-row">
@@ -119,10 +128,10 @@
 											<input type="text" name="LastName" id="LastName" class="form-register__input browser-default">
 										</div>
 										<div class="dealer-row input-block--contact">
-											<label for="Phone">Phone number </label>
-											<input type="text" name="PhoneNumber" id="PhoneNumber"
+											<label for="Contact">Contact number </label>
+											<input type="text" name="ContactNumber" id="ContactNumber"
 												class="form-register__input browser-default">
-											<input type="text" name="Phone" id="Phone" class="form-register__input browser-default">
+											<input type="text" name="Contact" id="Contact" class="form-register__input browser-default">
 
 										</div>
 										<div class="dealer-row">
@@ -142,26 +151,35 @@
 			</div>
 
 
-			<div class="row">
-				<div class="col l3 offset-l9">
-					<a href="#" class="button step-button">Back</a>
-					<a href="#" class="button step-button disabled-btn">Next</a>
-				</div>
-			</div>
 
 			</form>
 		</div>
 
 		<div class="login-footer">
-			<div class="login-footer__copy">
-				<a class="login-footer__link" href="#">© Copyright 2020 Cinema101 All rights reserved
-				</a>
+			<div class="row login-footer-step">
+				<div class="col l12">
+					<a href="#" class="button step-button">Back</a>
+					<a href="#" class="button step-button disabled-btn">Next</a>
+				</div>
 			</div>
-
-			<div class="login-footer__policy">
-				<a class="login-footer__link" href="#">Terms of Use</a>
-				<a class="login-footer__link" href="#">Privacy Policy</a>
+		
+		<div class="row">
+			<div class="col l12">
+			<div class="login-footer-wrap">
+				<div class="login-footer-wrap__copy">
+					<a class="login-footer-wrap__link" href="#">© Copyright 2020 Cinema101 All rights reserved
+					</a>
+				</div>
+		
+				<div class="login-footer-wrap__policy">
+					<a class="login-footer-wrap__link" href="#">Terms of Use</a>
+					<a class="login-footer-wrap__link" href="#">Privacy Policy</a>
+				</div>
 			</div>
+			</div>
+		</div>
+		
+		
 		</div>
 	</main>
 

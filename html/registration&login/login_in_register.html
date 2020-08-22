@@ -21,7 +21,7 @@
 				</div>
 
 				<div class="col l2 s4 offset-l3  offset-s4 ">
-					<select name="#" id="" class="browser-default form-register__input">
+					<select name="#" id="" class="select-cust browser-default form-register__input">
 						<option value="">English</option>
 						<option value="">Russian</option>
 					</select>
@@ -33,7 +33,6 @@
 					<div class="col l3 dealer-wrap">
 						<div class="file-field input-field dealer-upload">
 							<div class="dealer-wrap__logo">
-
 								<img id="file_upload" width="233" height="233" src="../../src/img/choose-logo.png" alt="choose-logo"
 									class="upload-img image-auto">
 								<p>Upload company logo</p>
@@ -66,9 +65,14 @@
 									class="form-register__input browser-default reg-disabled">
 							</div>
 							<div class="dealer-row">
+
 								<label for="segment">Segment</label>
-								<input type="text" name="segment" id="segment"
-									class="form-register__input browser-default reg-disabled">
+								<select name="segment " id="segment"
+									class="select-new select-cust browser-default form-register__input">
+									<option value="#"></option>
+									<option value="">Commercial & Residential</option>
+									<option value="">Commercial & Residential</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -90,6 +94,7 @@
 									class="form-register__input browser-default reg-disabled">
 								<input type="text" name="Address" id="Address"
 									class="form-register__input browser-default reg-disabled">
+								<input type="text" name="" id="#" class="form-register__input browser-default reg-disabled">
 								<input type="text" name="" id="#" class="form-register__input browser-default reg-disabled">
 							</div>
 						</div>
@@ -113,10 +118,20 @@
 							<label for="Country">Country</label>
 							<select name="Country" id="Country"
 								class="browser-default country-select form-register__input reg-disabled">
-								<option data-img_src="#" value=""></option>
+								<option></option>
 								<option data-img_src="../../src/img/state/United States.svg" value="1">United States
 								</option>
 								<option data-img_src="../../src/img/state/Argentina.svg" value="2">Argentina</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
 								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
 
 
@@ -160,10 +175,11 @@
 										class="form-register__input browser-default reg-disabled">
 								</div>
 								<div class="dealer-row input-block--contact">
-									<label for="Phone">Phone number </label>
-									<input type="text" name="PhoneNumber" id="PhoneNumber"
+									<label for="Contact">Contact number </label>
+									<input type="text" name="ContactNumber" id="ContactNumber"
 										class="form-register__input browser-default reg-disabled">
-									<input type="text" name="Phone" id="Phone" class="form-register__input browser-default reg-disabled">
+									<input type="text" name="Contact" id="Contact"
+										class="form-register__input browser-default reg-disabled">
 
 								</div>
 								<div class="dealer-row">
@@ -191,29 +207,38 @@
 
 			</div>
 
-			<div class="row">
-				<div class="col l3 offset-l9">
-					<a href="#" class="button step-button">Back</a>
-					<a href="#" class="button step-button disabled-btn">Next</a>
-				</div>
-			</div>
+
 
 			</form>
 		</div>
 
 
 		<div class="login-footer">
-			<div class="login-footer__copy">
-				<a class="login-footer__link" href="#">© Copyright 2020 Cinema101 All rights reserved
-				</a>
+			<div class="row login-footer-step">
+				<div class="col l12">
+					<a href="#" class="button step-button">Back</a>
+					<a href="#" class="button step-button disabled-btn">Next</a>
+				</div>
 			</div>
 
-			<div class="login-footer__policy">
-				<a class="login-footer__link" href="#">Terms of Use</a>
-				<a class="login-footer__link" href="#">Privacy Policy</a>
+			<div class="row">
+				<div class="col l12">
+					<div class="login-footer-wrap">
+						<div class="login-footer-wrap__copy">
+							<a class="login-footer-wrap__link" href="#">© Copyright 2020 Cinema101 All rights reserved
+							</a>
+						</div>
+
+						<div class="login-footer-wrap__policy">
+							<a class="login-footer-wrap__link" href="#">Terms of Use</a>
+							<a class="login-footer-wrap__link" href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
 			</div>
+
+
 		</div>
-
 	</main>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="

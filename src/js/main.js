@@ -1,20 +1,4 @@
 $(function () {
-
-
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            let reader = new FileReader();
-
-            reader.onload = function (e) {
-                $('#file_upload')
-                    .attr('src', e.target.result);
-            };
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-
-
-
     // select 2
 // select state
     function formatState(state) {
@@ -32,6 +16,7 @@ $(function () {
     $('.country-select').select2({
         templateResult: formatState,
         templateSelection: formatState,
+        placeholder: "",
 
     });
 
@@ -53,6 +38,20 @@ $(function () {
     });
 
 
-    
+   
 
 });
+
+
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        let reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#file_upload')
+                .attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
