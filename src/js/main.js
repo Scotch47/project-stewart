@@ -17,6 +17,8 @@ $(function () {
         templateResult: formatState,
         templateSelection: formatState,
         placeholder: "",
+        dropdownParent: $('.search-select'),
+
 
     });
 
@@ -35,10 +37,10 @@ $(function () {
     $('.payment-select').select2({
         templateResult: formatPayment,
         templateSelection: formatPayment,
-    });
+    });  
 
-
-   
+    $('.select-cust').select2();  
+    
 
 });
 

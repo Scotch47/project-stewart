@@ -20,7 +20,7 @@
 
 				</div>
 
-				<div class="col l2 s4 offset-l3  offset-s4 ">
+				<div class="col l2 s4 offset-l3  offset-s4 select-new-wrap">
 					<select name="#" id="" class="select-cust browser-default form-register__input">
 						<option value="">English</option>
 						<option value="">Russian</option>
@@ -35,7 +35,7 @@
 						<div class="col xl5 l5 s12">
 							<h4 class="company-title">Subscription</h4>
 
-							<div class="user-row">
+							<div class="user-row select-new-wrap">
 								<label for="licens">Please choose your subscription</label>
 								<select name="licens" id="licens" class="select-cust form-register__input browser-default">
 									<option value="#">Dealer</option>
@@ -44,7 +44,7 @@
 								</select>
 							</div>
 
-							<div class="user-row">
+							<div class="user-row select-new-wrap">
 								<label for="plan">Choose Your preferred plan</label>
 								<select name="plan" id="plan" class="select-cust form-register__input browser-default">
 									<option value="#">Annual</option>
@@ -55,7 +55,7 @@
 							</div>
 
 
-							<div class="user-row">
+							<div class="user-row select-new-wrap">
 								<label for="frequency">Add file request subscription</label>
 								<select name="frequency" id="frequency" class="select-cust form-register__input browser-default">
 									<option value="#">Annual</option>
@@ -64,9 +64,11 @@
 								</select>
 							</div>
 
-							<div class="user-row">
-								<label for="LicenCount">How many licenses do you wish to purchase?</label>
-								<select name="LicenCount" id="LicenCount" class="select-cust form-register__input browser-default">
+							
+
+							<div class="user-row select-new-wrap total-block">
+								<label for="LicenCount1">How many licenses do you wish to purchase? <span class="licenses-mark">*</span></label>
+								<select name="" id="" class="select-cust form-register__input browser-default">
 									<option value="#">5</option>
 									<option value="#">4</option>
 									<option value="#">3</option>
@@ -74,10 +76,12 @@
 							</div>
 
 							<div class="user-row total">
-								<label for="TotalDue">Total Due</label>
+								<label for="TotalDue"><strong>Total Due</strong></label>
 								<input type="text" name="TotalDue" id="firstName"
 									class="form-register__input browser-default company-wrap__inp" value="xxxxx">
 							</div>
+
+							<p class="licenses-mark__desc"><span class="licenses-mark">*</span> If you require more than 5 seats then please contact <a href="mailto:info@cinema101.guru">info@cinema101.guru</a></p>
 
 
 
@@ -110,9 +114,9 @@
 											<input type="email" name="Email" id="Email" class="form-register__input browser-default">
 										</div>
 
-										<div class="dealer-row">
+										<div class="dealer-row select-new-wrap">
 											<label for="LicenCount">Add file request subscription</label>
-											<select name="LicenCount" id="LicenCount"
+											<select name="LicenCount1" id="LicenCount1"
 												class="select-cust form-register__input browser-default">
 												<option value="#">1</option>
 												<option value="#">2</option>
@@ -147,7 +151,7 @@
 											<label for="Email">Email</label>
 											<input type="email" name="Email" id="Email" class="form-register__input browser-default">
 										</div>
-										<div class="dealer-row">
+										<div class="dealer-row select-new-wrap">
 											<label for="LicenCount">Add file request subscription</label>
 											<select name="LicenCount" id="LicenCount"
 												class="select-cust form-register__input browser-default">
@@ -173,13 +177,16 @@
 			</form>
 		</div>
 
-		<div class="login-footer">
-			<div class="row login-footer-step">
-				<div class="col l12">
+		<div class="login-footer-step">
+			<div class="row">
+				<div class="col l6 offset-l6 ">
 					<a href="#" class="button step-button">Back</a>
 					<a href="#" class="button step-button disabled-btn">Next</a>
 				</div>
 			</div>
+			</div>
+
+		<div class="login-footer">
 
 			<div class="row">
 				<div class="col l12">

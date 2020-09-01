@@ -26,6 +26,8 @@
 		margin-bottom: 65px;
 		width: 233px;
 		height: 233px;
+		color: #fff;
+
 
 		p {
 			margin-left: 30px;
@@ -78,7 +80,7 @@
 	flex-wrap: wrap;
 
 	&__btn {
-		min-width: 196px;
+		min-width: 200px;
 		font-size: 22px;
 		line-height: 26px;
 		font-weight: normal;
@@ -92,15 +94,15 @@
 		margin-bottom: 20px;
 		border: none;
 		width: 100%;
-		padding: 19px;
+		padding: 19px 10px 19px 19px;
 		height: 60px;
 
 	}
 }
 
-
-.reg-disabled {
+input[disabled], .reg-disabled {
 	background: #D1D1D1;
+	cursor: not-allowed;
 }
 
 
@@ -176,6 +178,17 @@
 	margin-left: 30px;
 }
 
+.licenses-mark{
+	color: red;
+}
+
+.licenses-mark__desc{
+	margin-top: 30px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
 
 // login-in register
 
@@ -186,6 +199,7 @@
 	scrollbar-width: auto;
 	margin-bottom: 30px;
 	padding-right: 25px;
+	position: relative;
 }
 
 .form-profile {
@@ -223,6 +237,10 @@
 		color: #FFFFFF;
 		flex: 1 0 70%;
 	}
+}
+
+.total-block{
+	margin-top: 18%;
 }
 
 .table-subscr-form {
@@ -339,6 +357,8 @@ td {
 
 .flag-group {
 	align-items: center;
+color: #000;
+	
 }
 
 .flag-group .select2-container--default .select2-selection--single {
@@ -349,6 +369,8 @@ td {
 	border: none;
 	width: 100%;
 	padding: 15px 5px 15px 20px;
+  color: #000;
+
 
 }
 
