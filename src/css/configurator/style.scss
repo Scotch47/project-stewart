@@ -59,16 +59,15 @@ input {
 
 .row {
   margin-bottom: 0;
-  padding-bottom: 20px;
 }
 
 
 
-
+//configurator_screen_landing_page
 // header
 
 .header {
-  max-height: 120px;
+  // height: 120px;
   // background-image: url(../../img/configurator/header-bg.png);
   // background-repeat: no-repeat;
   // background-size: contain;
@@ -150,26 +149,24 @@ input {
 
 .menu {
   display: flex;
-  margin-left: 20px;
+  margin-left: 30px;
 
   &-link:hover {
     svg path {
       stroke: #000;
       transition: 0.2s;
-
-
-
     }
   }
 
-  &-link:not(:hover) {
-    svg path {
-      stroke: #F1F1F1;
-      transition: 0.2s;
-    }
+  &-item_active {
+    background-color: #fff;
+
   }
 
+  &-item_active .menu-link svg path {
+    stroke: $baseColor;
 
+  }
 }
 
 
@@ -239,8 +236,6 @@ input {
     transform: rotate(90deg);
     top: 60px;
     left: -80px;
-
-
   }
 
   &__caption {
@@ -253,9 +248,7 @@ input {
     font-weight: 500;
     font-size: 38px;
     line-height: 40px;
-
   }
-
 
 }
 
@@ -267,6 +260,102 @@ input {
 
 
 
+//configurator_screen_new_load_project
+
+.load-project-main {
+  display: flex;
+  min-height: 800px;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.project-control {
+  flex: 1 0 40%;
+  padding: 0 20px 0 85px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  justify-content: space-between;
+
+
+
+  &-link {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #333333;
+
+  }
+}
+
+.project-open,
+.project-create {
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.load-project {
+  flex: 0 1 60%;
+  background-color: #fff;
+  border: 1px solid red;
+}
+
+.load-project_bg {
+  // min-height: 965px;
+  background-image: url(../../img/configurator/open-project-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 0 1 60%;
+}
+
+
+.disabled_link {
+  color: #999999;
+  cursor: not-allowed;
+
+  svg path {
+    stroke: #999999;
+  }
+}
+
+
+// configurator_screen_new_load_project(open)
+.main-table {
+  padding: 35px 60px 0 48px;
+
+  &-sort {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  &__control {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  &__control+&__control {
+    margin-left: 20px;
+
+  }
+}
+
+.table-wrap {
+  &__title {
+    background-color: $baseColor;
+    color: #fff;
+
+
+    th {
+      border-radius: 0;
+      padding: 3px;
+    }
+  }
+}
 
 
 
