@@ -57,3 +57,16 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $('.dropdown-trigger').dropdown({
+    constrainWidth: true,
+    hover: true,
+  });

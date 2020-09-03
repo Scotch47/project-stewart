@@ -39,27 +39,85 @@ input {
   outline-color: lightgray;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff1f;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #838383;
+  -webkit-box-shadow: inset 0.5px 0px 0px rgba(0, 0, 0, 0.07), inset 1px 0px 0px rgba(0, 0, 0, 0.02), inset -1px 0px 0px rgba(0, 0, 0, 0.02), inset -0.5px 0px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: inset 0.5px 0px 0px rgba(0, 0, 0, 0.07), inset 1px 0px 0px rgba(0, 0, 0, 0.02), inset -1px 0px 0px rgba(0, 0, 0, 0.02), inset -0.5px 0px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
 .row {
   margin-bottom: 0;
 }
 
+button,
+.button {
+  background: #117BC1;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 17px 30px;
+  color: #fff;
+  font-weight: 500;
+  min-height: 60px;
+}
+
+button:active,
+.button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+  background: #fff;
+  color: #117BC1;
+}
+
+button:focus,
+.button:focus {
+  background: #fff;
+  color: #117BC1;
+}
+
 .header {
-  background: #f1f1f1;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, #f1f1f1), color-stop(70%, #117bc1));
-  background: linear-gradient(0deg, #f1f1f1 70%, #117bc1 70%);
+  height: 120px;
+  position: relative;
+  background-color: #117BC1;
+}
+
+.vect {
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 50px;
-  text-align: right;
+  margin-top: 70px;
+  z-index: 2;
+  position: relative;
 }
 
 .wrap-menu {
   background-color: #117BC1;
-  border-bottom-left-radius: 100px;
 }
 
 .main-nav {
@@ -70,6 +128,8 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 10px;
+  position: relative;
+  z-index: 6;
 }
 
 .company-menu {
@@ -77,6 +137,7 @@ input {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
+  z-index: 12;
 }
 
 .controls-link {
@@ -121,7 +182,12 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 30px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+.menu-link svg {
+  width: 90%;
 }
 
 .menu-link:hover svg path {
@@ -131,7 +197,7 @@ input {
 }
 
 .menu-item_active {
-  background-color: #fff;
+  background-color: #F1F1F1;
 }
 
 .menu-item_active .menu-link svg path {
@@ -244,15 +310,13 @@ input {
   display: -ms-flexbox;
   display: flex;
   min-height: 800px;
-  overflow: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 .project-control {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 37%;
+          flex: 0 0 37%;
   padding: 0 20px 0 85px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -280,14 +344,7 @@ input {
 .project-create {
   margin-right: 30px;
   vertical-align: middle;
-}
-
-.load-project {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 60%;
-          flex: 0 1 60%;
-  background-color: #fff;
-  border: 1px solid red;
+  float: left;
 }
 
 .load-project_bg {
@@ -295,8 +352,8 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 60%;
-          flex: 0 1 60%;
+      -ms-flex: 0 1 63%;
+          flex: 0 1 63%;
 }
 
 .disabled_link {
@@ -308,8 +365,25 @@ input {
   stroke: #999999;
 }
 
+.load-project {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 63%;
+          flex: 1 0 63%;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
 .main-table {
   padding: 35px 60px 0 48px;
+}
+
+.main-table-form {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  max-height: 700px;
 }
 
 .main-table-sort {
@@ -329,6 +403,10 @@ input {
   margin-left: 20px;
 }
 
+.table-wrap {
+  margin-bottom: 10px;
+}
+
 .table-wrap__title {
   background-color: #117BC1;
   color: #fff;
@@ -336,7 +414,63 @@ input {
 
 .table-wrap__title th {
   border-radius: 0;
-  padding: 3px;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.table-wrap__body td {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.table-wrap__body tr:nth-child(2n) {
+  background-color: #e5f3ff;
+}
+
+.table-wrap__body tr {
+  border: 1px solid transparent;
+}
+
+.table-wrap__body tr:hover {
+  border: 1px solid #000000;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.custom-btn {
+  background-color: #fff;
+}
+
+.load-project_bg2 {
+  background-image: url(../../img/configurator/open-project-bg2.png);
+}
+
+.create-modal-block {
+  width: 804px;
+  height: 698px;
+  margin: 31px auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.create-modal-form {
+  padding: 97px 90px 90px 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-content {
+  width: 500px;
 }
 
 @media (max-width: 1245px) {
@@ -347,6 +481,42 @@ input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 1520px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 60px;
+  }
+  .menu-link svg {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .vect {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+  }
+  .logo {
+    background-color: #F1F1F1;
+    border-radius: 55%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vect {
+    display: none;
+  }
+  .logo {
+    background-color: #F1F1F1;
+    border-radius: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
