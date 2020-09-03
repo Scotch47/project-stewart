@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="../../src/select2/css/select2.min.css">
   <link rel="stylesheet" href="../../src/css/configurator/style.css">
-  <title>configurator_screen_new_load_project(create)</title>
+  <title>configurator_screen_new_load_project</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       <div class="col xl5 l9 wrap-menu">
         <div class="main-nav">
           <ul class="menu">
-            <li class="menu-item menu-item_active">
+            <li class="menu-item">
               <a href="#" class="menu-link">
                 <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -57,7 +57,7 @@
 
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item_active">
               <a href="#" class="menu-link">
                 <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -203,7 +203,7 @@
               </a>
             </div>
 
-            <img src="../../src/img/configurator/company-logo-small.svg" alt="company-img-small" class="company-img">
+            <img src="../../src/img/configurator/super-logo.svg" alt="super-logo" class="company-img">
           </div>
 
         </div>
@@ -218,93 +218,39 @@
   </header>
 
   <main class="main">
-    <section class="load-project-main">
-      <aside class="project-control">
-        <a href="#" class="project-control-link">
-          <i class="project-create">
-            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M23.5098 -9.05957V56.0786" stroke="#333333" stroke-width="3" stroke-miterlimit="10" />
-              <path d="M56.0788 23.5095H-9.0593" stroke="#333333" stroke-width="3" stroke-miterlimit="10" />
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="47" height="47" fill="white" />
-                </clipPath>
-              </defs>
-            </svg></i>
-          Create new project
+    <section class="user-search">
+      <div class="search-tabs">
+        <a href="#" class="search-tabs__title">
+          <img src="../../src/img/configurator/search-icon.svg" alt="search"> User Search
         </a>
-        <a href="#" class="project-control-link disabled_link">
-          <i class="project-open">
-            <svg width="47" height="47" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M26.8867 7.06335H42.6111H42.9993C44.1519 7.06335 45.0862 8.00924 45.0862 9.17625V20.5761"
-                stroke="#333333" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" />
-              <path
-                d="M41.2523 41.0786H3.03343C1.85653 41.0786 0.910156 40.1204 0.910156 38.9289V8.84463V4.38544C0.910156 2.46909 2.43891 0.921265 4.33166 0.921265H17.1562C17.957 0.921265 18.7456 1.17923 19.4008 1.64604C21.9002 3.45183 24.3875 5.25762 26.8869 7.06341"
-                stroke="#333333" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" />
-              <path
-                d="M1.28658 39.0271L4.28343 22.8487C4.44115 22.0256 5.14487 21.4237 5.96991 21.4237H47.3676C48.4475 21.4237 49.2604 22.4187 49.0541 23.4875L46.0573 39.6659C45.8995 40.4889 45.1958 41.0909 44.3708 41.0909H2.9852C1.90536 41.0786 1.09245 40.0958 1.28658 39.0271Z"
-                stroke="#333333" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" />
-              <defs>
-                <clipPath id="clip0">
-                  <rect width="47" height="47" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+      </div>
 
-          </i>
-          Open project
-        </a>
-      </aside>
 
-      <div class="load-project load-project_bg load-project_bg2">
-        <div class="create-modal-block">
-          <p class="create-date">25/05/2020</p>
-          <form action="#" class="create-modal-form">
-            <div class="label-row project-select-wrap">
-              <label for="">Project Type</label>
-              <select name="" id="" class="project-input browser-default custom-select" style="width: 50%">
-                <option value="#">1</option>
-                <option value="#">2</option>
-              </select>
-            </div>
-            <div class="label-row">
-              <label for="Project Name">Project Name</label>
-              <input type="text" name="Project Name" id="" class="project-input browser-default">
-            </div>
-            <div class="label-row">
-              <label for="Client Name">Client Name</label>
-              <input type="text" name="Client Name" id="" class="project-input browser-default">
-            </div>
-            <div class="label-row">
-              <label for="Client Email">Client Email</label>
-              <input type="text" name="Client Email" id="" class="project-input browser-default">
-            </div>
-            <div class="label-row label-row-group project-select-wrap">
-              <label for="">Delivery Address</label>
-              <div class="input-group">
-                <select name="" id="" class="project-input browser-default custom-select"
-                style="width: 100%">
-                  <option value="#">Country Dropbox</option>
-                </select>
-                <select name="" id="" class="project-input browser-default custom-select"
-                style="width: 100%">
-                  <option value="#">Country Dropbox</option>
-           
 
-                </select>
-                
-                <input type="text" name="Delivery Address" id="" class="project-input browser-default">
-                <input type="text" name="Delivery Address" id="" class="project-input browser-default">
-              </div>
 
-            </div>
 
-            <input type="button" class="button project-button" value="Begin Configuration">
+      <div class="search-container">
+        <div class="row">
+          <div class="col xl6" style="border: 1px solid red;">
+            <form action="#" class="form-search">
+              <label for="#">User Search
+                <input type="search" class="browser-default">
+              </label>
 
-          </form>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Filled in</span>
+                </label>
+              </p>
 
+
+
+            </form>
+          </div>
         </div>
       </div>
+
 
     </section>
 
