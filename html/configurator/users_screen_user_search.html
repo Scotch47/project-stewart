@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="../../src/select2/css/select2.min.css">
@@ -226,31 +226,483 @@
       </div>
 
 
-
-
-
       <div class="search-container">
         <div class="row">
-          <div class="col xl6" style="border: 1px solid red;">
-            <form action="#" class="form-search">
-              <label for="#">User Search
-                <input type="search" class="browser-default">
-              </label>
+          <div class="col m6 l8 xl5 offset-xl7">
+            <div class="row">
+              <div class="col l3">
+                <div class="search-count-row">
+                  <p>Total number:</p>
+                  <span><strong>87</strong></span>
+                </div>
+                <div class="search-count-row">
+                  <p>Africa:</p>
+                  <span>0</span>
+                </div>
+              </div>
 
-              <p>
-                <label>
-                  <input type="checkbox" class="filled-in" checked="checked" />
-                  <span>Filled in</span>
-                </label>
-              </p>
+              <div class="col l3">
+                <div class="search-count-row">
+                  <p>Asia Pacific:</p>
+                  <span>0</span>
+                </div>
+                <div class="search-count-row">
+                  <p>C./S. America:</p>
+                  <span>0</span>
+                </div>
+              </div>
 
+              <div class="col l3">
+                <div class="search-count-row">
+                  <p>Europe:</p>
+                  <span><strong>87</strong></span>
+                </div>
+                <div class="search-count-row">
+                  <p>Middle East:</p>
+                  <span>0</span>
+                </div>
+              </div>
 
+              <div class="col l3">
+                <div class="search-count-row">
+                  <p>N. America:</p>
+                  <span>0</span>
+                </div>
 
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col xl6 l6">
+            <form action=" #" class="form-search">
+              <div class="row">
+                <div class="col xl5 search-block">
+                  <label for="#" class="search-block__label">User Search</label>
+                  <input type="search" class="browser-default search-block__input">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col xl12 l6">
+                  <h5 class="search-title">Advanced Search</h5>
+                  <div class="fixx">
+                    <div class="col xl6">
+                      <p class="search-subtitle">User Type</p>
+                      <div class="col xs3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Super Users</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xs3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Dealers</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xs3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Distributors</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xs3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Other</span>
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col xl6">
+                      <p class="search-subtitle">Segment</p>
+                      <div class="col xs3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Commercial</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 m3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Both</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col xl12">
+                      <p class="search-subtitle">Region</p>
+                    </div>
+                    <div class="col xl6">
+                      <div class="col xl6 m3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">All</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 m3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Asia Pacific</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 m3   search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Africa</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">C./S. America</span>
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col xl6">
+                      <div class="col xl6 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl6 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col xl12 search-container-fix">
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col xl3 search-checkbox">
+                        <p>
+                          <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span class="search-checkbox__label">Residential</span>
+                          </label>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <button class="button search-block__btn">Search</button>
+
+                </div>
+              </div>
             </form>
+          </div>
+
+          <div class="col xl6 l6">
+            <div class="row">
+              <div class="col xl12">
+                <h5 class="search-title">Europe</h5>
+
+                <div class="country-block-fix">
+                  <div class="search-country-block">
+                    <div class="col s12 search-country-title">
+                      <h6 class="search-title">Germany</h6>
+                    </div>
+
+                    <div class="col xl12 search-w">
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="search-country-block">
+                    <div class="col s12 search-country-title">
+                      <h6 class="search-title">The Netherlands</h6>
+                    </div>
+
+                    <div class="col xl12 search-w">
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="search-country-block">
+                    <div class="col s12 search-country-title">
+                      <h6 class="search-title">United Kingdom</h6>
+                    </div>
+
+                    <div class="col xl12 search-w">
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+
+                      <div class="col search-country-item">
+                        <div class="search-item-row">
+                          <p>Screen Professional GmbH</p>
+                          <a href="#">View</a>
+                        </div>
+                        <ul class="search-item-list">
+                          <li>ID: 4923</li>
+                          <li>Commercial Distributor</li>
+                          <li>Zweibruckenstr.39</li>
+                          <li>Forchheim</li>
+                          <li>91301</li>
+                          <li>Germany</li>
+                          <li>+49 174 68 60 666</li>
+                          <li>stefan.block@screenprofessional.de</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                </div>
+
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-
 
     </section>
 

@@ -854,6 +854,10 @@ td {
   color: #000;
 }
 
+.select-new-wrap .select2-container {
+  width: 100% !important;
+}
+
 .select-new-wrap .select2-container--default .select2-selection--single {
   -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
           box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);

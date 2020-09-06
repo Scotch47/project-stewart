@@ -39,11 +39,20 @@ $(function () {
         templateSelection: formatPayment,
     });  
 
+
+    $('.select-mult').select2({
+        multiple: true,
+        placeholder: "" ,
+
+    }); 
+
+
     $('.select-cust').select2();
+
+  
     
     // configurator
     $('.custom-select').select2();  
-    
     
 
 });
@@ -72,5 +81,21 @@ function readURL(input) {
 
   $('.dropdown-trigger').dropdown({
     constrainWidth: true,
-    hover: true,
   });
+
+  $(document).ready(function () {
+    $(".dws-progress-bar").circularProgress({
+        color: "#117BC1",
+        line_width: 5,
+        height: "250px",
+        width: "250px",
+        percent: 0,
+        // counter_clockwise: true,
+        starting_position: 25
+    }).circularProgress('animate', 100, 2000);
+});
+
+$(window).on('load', function () {
+   var $preloader = $('#preloader');
+   $preloader.delay(3100).fadeOut('slow');
+});
