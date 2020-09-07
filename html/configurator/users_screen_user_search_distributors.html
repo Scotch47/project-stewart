@@ -6,16 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="../../src/select2/css/select2.min.css">
   <link rel="stylesheet" href="../../src/css/configurator/style.css">
-  <title>configurator_screen_new_load_project</title>
+  <title>users_screen_user_search_distributors</title>
 </head>
 
 <body>
-  <div id="preloader">
-    <div class="dws-progress-bar"></div>
-  </div>
-
-
   <header class="header">
     <div class="row">
       <div class="col xl2 offset-xl5 l3 logo">
@@ -28,7 +24,7 @@
       <div class="col xl5 l9 wrap-menu">
         <div class="main-nav">
           <ul class="menu">
-            <li class="menu-item menu-item_active">
+            <li class="menu-item">
               <a href="#" class="menu-link">
                 <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -61,7 +57,7 @@
 
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item_active">
               <a href="#" class="menu-link">
                 <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -207,7 +203,7 @@
               </a>
             </div>
 
-            <img src="../../src/img/configurator/company-logo-small.svg" alt="company-img-small" class="company-img">
+            <img src="../../src/img/configurator/super-logo.svg" alt="super-logo" class="company-img">
           </div>
 
         </div>
@@ -222,25 +218,206 @@
   </header>
 
   <main class="main">
-    <section class="configurator-section">
-      <div class="contaoner-con">
-      <canvas id="unity-canvas" width="1920" height="1080" style="background: rgb(35, 31, 32); cursor: default;" 
-       ></canvas>
-        <script  src="../../src/config/Build/webGL Conf (build 13(17)).framework.js"></script>
-        <script  src="../../src/config/Build/webGL Conf (build 13(17)).loader.js"></script>
-        <script>
-          createUnityInstance(document.querySelector("#unity-canvas"), {
-            dataUrl: "../../src/config/Build/webGL Conf (build 13(17)).data",
-            frameworkUrl: "../../src/config/Build/webGL Conf (build 13(17)).framework.js",
-            codeUrl: "../../src/config/Build/webGL Conf (build 13(17)).wasm",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "Cinema 101",
-            productName: "Stewart Filmscreen Config",
-            productVersion: "1.0",
-          });
-        </script>
-</div>
+    <section class="user-search">
+      <div class="search-tabs">
+        <a href="#" class="search-tabs__title">
+          <img src="../../src/img/configurator/search-icon.svg" alt="search"> User Search
+        </a>
+      </div>
+
+
+      <div class="search-container">
+        <div class="row">
+          <div class="col xl3 search-block">
+            <p>Dealer Network</p>
+          </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+          <div class="col xl2 l2 dealer-card">
+            <div class="col l12">
+              <div class="row">
+                <div class="col l12 dealer-card-logo">
+                  <img src="../../src/img/configurator/card-dist-logo.png" alt="">
+                  <p class="dealer-card-title">Anders & Kern UK</p>
+                  <p class="dealer-card-subtitle">Commercial & Recidential Distributor</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col l12">
+                  <div class="search-count-row">
+                    <p>United Kingdom Europe</p>
+                    <span><img src="../../src/img/configurator/icon-dealer-uk.png" alt="UK"></span>
+                  </div>
+                  <div class="search-count-row">
+                    <p>Dealer ID no.:</p>
+                    <span>UK4955</span>
+                  </div>
+                </div>
+
+                <div class="col l12">
+                  <div class="search-count-row">
+                    <p>SInce:</p>
+                    <span>2017</span>
+                  </div>
+                  <div class="search-count-row">
+                    <p>Distributor:</p>
+                    <span>Anders & Kern UK</span>
+                  </div>
+                </div>
+
+                <div class="col l12">
+                  <p>206 Great Portland St. London W1W 5QJ
+
+                  </p>
+                </div>
+
+                <div class="col l12">
+                  <p>+44 8231 385 557
+                  </p>
+                </div>
+                <div class="col l12">
+                  <p>info@ideaworks.co.uk</p>
+                </div>
+                <div class="col l12">
+                  <p>www.ideaworks.co.uk </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="col xl10">
+            <div class="main-table-dealer">
+              <div class="main-table-sort">
+                <a href="#" class="main-table__control">Sort</a>
+                <a href="#" class="main-table__control">Filter</a>
+              </div>
+              <form action="" class="main-table-form">
+                <table class="table-wrap table-wrap_responsive">
+                  <thead class="table-wrap__title">
+                    <tr>
+                      <th>#</th>
+                      <th>Type</th>
+                      <th>Company</th>
+                      <th>Location</th>
+                      <th>Active Projects</th>
+                      <th>Completed</th>
+                      <th>Cancelled</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="table-wrap__body">
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+                    <tr>
+                      <td>1</td>
+                      <td>C&R</td>
+                      <td>Ideaworks</td>
+                      <td>London</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>0</td>
+                    </tr>
+
+
+
+
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row dealer-search-btn">
+          <div class="col xl4 l4 search-btn-wrap">
+            <a href="#" class="button">Back to Search</a>
+            <a href="#" class="button">New Search</a>
+          </div>
+
+          <div class="col xl2 l4 offset-xl6 offset-l4 search-btn-wrap">
+            <a href="#" class="button">CSV File</a>
+            <a href="#" class="button">Print</a>
+          </div>
+        </div>
+
+      </div>
+
     </section>
+
 
   </main>
 
@@ -251,10 +428,7 @@
   <script src="../../src/js/materialize.min.js"></script>
   <script src="../../src/select2/js/select2.min.js"></script>
 
-
   <script src="../../src/js/main.js"></script>
-  <script src="../../src/config/plugin.js"></script>
-
 </body>
 
 </html>

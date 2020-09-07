@@ -416,13 +416,13 @@ button:focus,
 
 .table-wrap__title th {
   border-radius: 0;
-  padding: 0 10px;
+  padding: 8px 10px;
   white-space: nowrap;
   font-weight: normal;
 }
 
 .table-wrap__body td {
-  padding: 0 10px;
+  padding: 8px 10px;
   white-space: nowrap;
 }
 
@@ -640,6 +640,12 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 #unity-canvas {
   width: 100%;
+  height: auto;
+}
+
+.contaoner-con {
+  max-width: 1430px;
+  margin: 0 auto;
 }
 
 .user-search {
@@ -874,6 +880,50 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  padding: 20px !important;
+  margin-top: 50px;
+}
+
+.dealer-search-item {
+  margin-bottom: 40px;
+}
+
+.main-table-dealer {
+  padding: 5px 20px;
+}
+
+.search-count-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dealer-search-btn {
+  margin-top: 32px;
+}
+
+.dealer-card-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-btn-wrap a + a {
+  height: auto;
+  margin-left: 20px;
+}
+
+.search-block p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
 }
 
 .dws-progress-bar {
