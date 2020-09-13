@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../src/select2/css/select2.min.css">
+	<link rel="stylesheet" href="../../src/css/main.css">
+	<title>login_in_register</title>
+</head>
+
+<body>
+	<main class="login-page">
+		<div class="login reg-block">
+			<div class="row reg-block-top">
+				<div class="col l3 offset-l4 s3 offset-s0 login-logo__small">
+					<a href="#"> <img src="../../src/img/small_logo.svg" alt="small_logo"></a>
+
+				</div>
+
+				<div class="col l2 s4 offset-l3  offset-s4 select-new-wrap">
+					<select name="#" id="" class="select-cust browser-default form-register__input" width="auto">
+						<option value="">English</option>
+						<option value="">Russian</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row register">
+				<form action="#" class="form-register">
+					<div class="col xl3 l3 m12 dealer-wrap">
+						<div class="file-field input-field dealer-upload">
+							<div class="dealer-wrap__logo">
+								<img id="file_upload" width="233" height="233" src="../../src/img/choose-logo.png" alt="choose-logo"
+									class="upload-img image-auto">
+								<p>Upload company logo</p>
+
+								<input type='file' onchange="readURL(this);" />
+								<div class="file-path-wrapper">
+									<input class="file-path validate  browser-default upload" type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="dealer-wrap__info">
+							<div class="dealer-row dealer-row--valid">
+								<label for="dealerId">Dealer ID</label>
+								<input type="text" name="dealer" id="dealerId" class="form-register__input browser-default">
+							</div>
+							<div class="dealer-row ">
+								<label for="validation">Validation</label>
+								<input type="text" name="validation" id="validation" class="form-register__input browser-default">
+							</div>
+							<div class="dealer-row dealer-row--btn">
+								<input type="button" value="Validate" class="form-register__btn button">
+
+							</div>
+
+
+							<div class="dealer-row">
+								<label for="usertTupe">User Type</label>
+								<input type="text" name="usertTupe" id="usertTupe"
+									class="form-register__input browser-default reg-disabled" disabled>
+							</div>
+							<div class="dealer-row select-new-wrap">
+								<label for="segment">Segment</label>
+								<select name="segment " id="segment" class="select-cust select-mult browser-default form-register__input">
+									<option value=""></option>
+									<option value="">Commercial & Residential</option>
+									<option value="">Commercial & Residential</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col xl4 l4 m12 company-wrap">
+						<h4 class="company-title">Company</h4>
+
+						<div class="dealer-row company-row">
+							<label for="companyName">Company name</label>
+							<input type="text" name="companyName" id="companyName"
+								class="form-register__input browser-default reg-disabled" disabled>
+						</div>
+
+						<div class="dealer-row dealer-row--input">
+							<label for="Address">Address</label>
+
+							<div class="inp-group">
+								<input type="text" name="Address" id="Address" class="form-register__input browser-default reg-disabled"
+									disabled>
+								<input type="text" name="Address" id="Address" class="form-register__input browser-default reg-disabled"
+									disabled>
+								<input type="text" name="" id="#" class="form-register__input browser-default reg-disabled" disabled>
+								<input type="text" name="" id="#" class="form-register__input browser-default reg-disabled" disabled>
+							</div>
+						</div>
+
+						<div class="dealer-row">
+							<div class="input-block">
+								<label for="zipPost" class="label-zip">Zip/Post code
+									<input type="text" name="zipPost" id="zipPost"
+										class="form-register__input browser-default reg-disabled" disabled></label>
+							</div>
+
+							<div class="input-block">
+								<label for="State" class="label-state">State
+									<input type="text" name="State" id="State" class="form-register__input browser-default reg-disabled"
+										disabled></label>
+							</div>
+
+
+						</div>
+						<div class="dealer-row flag-group search-select">
+							<label for="Country">Country</label>
+							<select name="Country" id="Country" class="browser-default country-select form-register__input">
+								<option></option>
+								<option data-img_src="../../src/img/state/United States.svg" value="1">United States
+								</option>
+								<option data-img_src="../../src/img/state/Argentina.svg" value="2">Argentina</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+								<option data-img_src="../../src/img/state/New Zealand.svg" value="3">New Zealand</option>
+
+
+							</select>
+						</div>
+						<div class="dealer-row">
+							<div class="input-block input-block--contact">
+								<label for="contactNum">Contact number</label>
+								<input type="tel" name="contactNum" id="contactNum+" class="form-register__input browser-default">
+								<input type="tel" name="contactNum" id="contactNum" class="form-register__input browser-default">
+							</div>
+
+
+
+						</div>
+						<div class="dealer-row">
+							<label for="Email">Email</label>
+							<input type="email" name="Email" id="Email" class="form-register__input browser-default">
+						</div>
+						<div class="dealer-row">
+							<label for="Website">Website</label>
+							<input type="text" name="Website" id="Website" class="form-register__input browser-default reg-disabled"
+								disabled>
+						</div>
+
+					</div>
+
+					<div class="col xl3 l4 m12 user-wrap">
+						<h4 class="company-title">User Profile</h4>
+						<div class="user-container">
+							<div class="user-block">
+								<div class="dealer-row company-row">
+									<label for="companyName">First name</label>
+									<input type="text" name="firstName" id="firstName"
+										class="form-register__input browser-default reg-disabled company-wrap__inp" disabled>
+								</div>
+								<div class="dealer-row">
+									<label for="LastName">Last name</label>
+									<input type="text" name="LastName" id="LastName"
+										class="form-register__input browser-default reg-disabled" disabled>
+								</div>
+								<div class="dealer-row input-block--contact">
+									<label for="Contact">Contact number </label>
+									<input type="text" name="ContactNumber" id="ContactNumber"
+										class="form-register__input browser-default reg-disabled" disabled>
+									<input type="text" name="Contact" id="Contact"
+										class="form-register__input browser-default reg-disabled" disabled>
+
+								</div>
+								<div class="dealer-row">
+									<label for="Email">Email</label>
+									<input type="email" name="Email" id="Email" class="form-register__input browser-default">
+								</div>
+							</div>
+
+							<div class="password-block">
+								<div class="dealer-row">
+									<label for="Password">Password</label>
+									<input type="password" name="Password" id="Password"
+										class="form-register__input browser-default reg-disabled" disabled>
+								</div>
+								<div class="dealer-row">
+									<label for="ConfPassword">Confirm password</label>
+									<input type="password" name="ConfPassword" id="ConfPassword"
+										class="form-register__input browser-default reg-disabled" disabled>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+				</form>
+			</div>
+
+		</div>
+		<div class="login-footer-step">
+			<div class="row">
+				<div class="col l6 offset-l6 ">
+					<a href="#" class="button step-button">Back</a>
+					<button class="button step-button disabled-btn">Next</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="login-footer">
+			<div class="row">
+				<div class="col l12">
+					<div class="login-footer-wrap">
+						<div class="login-footer-wrap__copy">
+							<a class="login-footer-wrap__link" href="#">© Copyright 2020 Cinema101 All rights reserved
+							</a>
+						</div>
+
+						<div class="login-footer-wrap__policy">
+							<a class="login-footer-wrap__link" href="#">Terms of Use</a>
+							<a class="login-footer-wrap__link" href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+	<script src="../../src/js/materialize.min.js"></script>
+	<script src="../../src/select2/js/select2.min.js"></script>
+
+	<script src="../../src/js/main.js"></script>
+
+</body>
+
+</html>
