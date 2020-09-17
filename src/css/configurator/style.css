@@ -104,6 +104,14 @@ button:focus,
   color: #117BC1;
 }
 
+.cancel-btn {
+  background-color: #C11C11;
+}
+
+.add-btn {
+  background-color: #F2994A;
+}
+
 .header {
   height: 120px;
   position: relative;
@@ -544,6 +552,7 @@ button:focus,
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  width: 100%;
 }
 
 .label-row-group {
@@ -666,7 +675,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   z-index: 10;
   background-color: #fff;
   margin-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .search-container {
@@ -690,6 +699,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   background-color: #117BC1;
   -webkit-filter: drop-shadow(0px -3px 5px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px -3px 5px rgba(0, 0, 0, 0.25));
+}
+
+.main-tabs__items a {
+  padding: 10px;
 }
 
 .main-tabs__items svg path {
@@ -1009,7 +1022,8 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   margin-right: 25px;
 }
 
-.centered, .centered td {
+.centered,
+.centered td {
   text-align: center;
 }
 
@@ -1032,6 +1046,121 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .pre-table-title td:first-child {
   border-left: 1px solid transparent;
+}
+
+.account-row {
+  margin-bottom: 75px;
+}
+
+.profile-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile-upload__logo {
+  margin-bottom: 65px;
+  width: 233px;
+  height: 233px;
+  color: #000;
+}
+
+.profile-upload__logo p {
+  margin-left: 30px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.upload-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.upload {
+  display: none;
+}
+
+#upload-file-inp {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 233px;
+  height: 233px;
+}
+
+.config-input {
+  width: 100%;
+  background: #F1F1F1;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  height: 60px;
+  border: none;
+  padding: 13px 25px;
+  margin-bottom: 18px;
+}
+
+.config-label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.config-button {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+input[type="password"].config-input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #797979;
+}
+
+input[type="password"].config-input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #797979;
+}
+
+input[type="password"].config-input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #797979;
+}
+
+input[type="password"].config-input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #797979;
 }
 
 .dws-progress-bar {

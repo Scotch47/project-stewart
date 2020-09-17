@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="../../src/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../src/css/configurator/style.css">
+  <title>profile_screen_manage_edit_profile_multi-users</title>
+</head>
+
+<body>
+  <div class="body-wrap">
+    <header class="header">
+      <div class="row">
+        <div class="col xl2 offset-xl5 logo">
+          <a href="#">
+            <img src="../../src/img/configurator/conf-logo.svg" alt="logo" class="logo-img">
+
+          </a>
+        </div>
+
+        <div class="col xl5 wrap-menu">
+          <div class="main-nav">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path d="M27.54 80.92V82.91" stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M11.7002 30.62C11.7002 25.71 16.1702 21.84 21.2602 22.86C24.9902 23.61 27.5402 27.11 27.5402 30.92V80.92"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path d="M27.5405 82.91C27.5405 82.7 27.5305 82.5 27.5205 82.3" stroke="#F1F1F1"
+                        stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M27.5202 82.29C27.2002 78.16 23.7102 74.91 19.4802 74.98C15.2502 75.05 11.6902 78.69 11.7002 82.92C11.7102 87.28 15.2502 90.82 19.6202 90.82C19.7802 90.82 19.9502 90.82 20.1102 90.81"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" />
+                      <path d="M11.7002 30.62V82.91" stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M19.6201 90.83H83.8201C85.1201 90.83 86.1701 89.78 86.1701 88.48V31.38C86.1701 30.08 85.1201 29.03 83.8201 29.03H27.5401"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M77.8698 82.11H34.2598C33.6198 82.11 33.0898 81.59 33.0898 80.94V37.33C33.0898 36.69 33.6098 36.16 34.2598 36.16H77.8698C78.5098 36.16 79.0398 36.68 79.0398 37.33V80.94C79.0398 81.59 78.5098 82.11 77.8698 82.11Z"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M52.4002 41.87L54.5202 54.61C54.6502 55.4 55.6202 55.71 56.1802 55.14L58.1302 53.19C58.5102 52.81 59.1302 52.81 59.5202 53.19L68.7802 62.45C69.1602 62.83 69.7802 62.83 70.1702 62.45L74.1102 58.51C74.4902 58.13 74.4902 57.51 74.1102 57.12L64.8502 47.86C64.4702 47.48 64.4702 46.86 64.8502 46.47L66.8002 44.52C67.3602 43.96 67.0502 42.99 66.2702 42.86L53.5302 40.74C52.8702 40.63 52.2902 41.21 52.4002 41.87Z"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="75.87" height="69.53" fill="white" transform="translate(11 22)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M48.2296 56.62C54.2385 56.62 59.1096 51.7489 59.1096 45.74C59.1096 39.7311 54.2385 34.86 48.2296 34.86C42.2208 34.86 37.3496 39.7311 37.3496 45.74C37.3496 51.7489 42.2208 56.62 48.2296 56.62Z"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M31 87.44V76.73C31 68.63 36.2 62.06 42.62 62.06H53.84C60.26 62.06 65.46 68.63 65.46 76.73V87.44"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M73.61 45.84C78.8954 45.84 83.18 41.5554 83.18 36.27C83.18 30.9846 78.8954 26.7 73.61 26.7C68.3247 26.7 64.04 30.9846 64.04 36.27C64.04 41.5554 68.3247 45.84 73.61 45.84Z"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M58.4805 62.83C58.7605 56.02 63.2205 50.62 68.6805 50.62H78.5405C84.1805 50.62 88.7505 56.4 88.7505 63.52V72.94"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M22.8503 45.84C28.1356 45.84 32.4203 41.5554 32.4203 36.27C32.4203 30.9846 28.1356 26.7 22.8503 26.7C17.5649 26.7 13.2803 30.9846 13.2803 36.27C13.2803 41.5554 17.5649 45.84 22.8503 45.84Z"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M7.7002 72.93V63.51C7.7002 56.38 12.2702 50.61 17.9102 50.61H27.7702C33.2202 50.61 37.6802 56.01 37.9702 62.81"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="82.46" height="61.44" fill="white" transform="translate(7 26)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M76.7803 32.93L83.7403 25.97C84.2103 25.5 83.8803 24.7 83.2103 24.7H39.8503C39.2503 24.7 38.6703 24.94 38.2503 25.36L32.3303 31.28L21.4703 32.84C21.0403 32.9 20.6403 33.1 20.3303 33.41L10.9303 42.81C10.4003 43.34 10.8503 44.23 11.5903 44.13L20.8103 42.81"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M66.9004 42.81L73.7204 46.9C74.5504 47.4 75.6104 47.27 76.3004 46.58L85.0604 37.82C85.8704 37.01 85.7104 35.65 84.7204 35.06L78.4304 31.29"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path d="M78.4305 31.29H32.3305L20.8105 42.81" stroke="#F1F1F1" stroke-width="1.4"
+                        stroke-miterlimit="10" />
+                      <path d="M78.4307 44.78V44.46" stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M20.8105 54.33V85.58C20.8105 87.41 22.3005 88.9 24.1305 88.9H65.5305C66.4105 88.9 67.2505 88.55 67.8805 87.93L77.4605 78.35C78.0805 77.73 78.4305 76.88 78.4305 76V44.78"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path d="M66.6405 88.9V43.07H20.8105" stroke="#F1F1F1" stroke-width="1.4"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M78.4305 31.29L66.6405 43.07L61.0205 53.09C60.5905 53.86 59.7805 54.33 58.8905 54.33H14.5805C13.7405 54.33 13.2605 53.38 13.7405 52.7L20.8105 42.8"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="76.28" height="65.6" fill="white" transform="translate(10 24)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item menu-item_active">
+                <a href="#" class="menu-link">
+                  <svg width="97" height="113" viewBox="0 0 97 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M48.65 51.42C56.3047 51.42 62.51 45.2147 62.51 37.56C62.51 29.9053 56.3047 23.7 48.65 23.7C40.9954 23.7 34.79 29.9053 34.79 37.56C34.79 45.2147 40.9954 51.42 48.65 51.42Z"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                      <path
+                        d="M26.7002 90.7V77.05C26.7002 66.72 33.3302 58.35 41.5002 58.35H55.8002C63.9702 58.35 70.6002 66.72 70.6002 77.05V90.7"
+                        stroke="#F1F1F1" stroke-width="1.4" stroke-miterlimit="10" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="45.3" height="67.7" fill="white" transform="translate(26 23)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+
+            <div class="company-menu">
+              <div class="company-controls">
+                <a href="#" class="controls-link controls-link_notification">
+                  <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.9403 21.35H1.92029C1.40029 21.35 1.08029 20.79 1.34029 20.34C2.84029 17.71 3.49029 15.41 3.79029 13.71C4.53029 9.55 3.61029 6.76 5.51029 4.73C6.69029 3.47 8.37029 3.12 9.62029 3.02C9.64029 3.02 9.66029 3.02 9.68029 3.02H13.1803C13.2003 3.02 13.2203 3.02 13.2403 3.02C14.4903 3.12 16.1803 3.48 17.3503 4.73C19.2503 6.76 18.3303 9.55 19.0703 13.71C19.3703 15.41 20.0103 17.71 21.5203 20.34C21.7803 20.79 21.4603 21.35 20.9403 21.35Z"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" />
+                    <path d="M9.65039 3C9.65039 1.59 10.4504 0.45 11.4304 0.45C12.4104 0.45 13.2204 1.6 13.2204 3"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" />
+                    <path
+                      d="M8.37012 21.35C8.37012 22.76 9.74012 23.9 11.4301 23.9C13.1201 23.9 14.4901 22.76 14.4901 21.35"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" />
+                  </svg>
+
+                  <i class="controls-alert">7</i>
+
+
+                </a>
+                <a href="#" class="controls-link controls-link_help">
+                  <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.25 30.25C23.5343 30.25 30.25 23.5343 30.25 15.25C30.25 6.96573 23.5343 0.25 15.25 0.25C6.96573 0.25 0.25 6.96573 0.25 15.25C0.25 23.5343 6.96573 30.25 15.25 30.25Z"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" />
+                    <path
+                      d="M12.4097 12.25C12.3997 12.25 10.8797 12.25 10.8597 12.25C10.8497 12.25 9.5997 12.25 9.5897 12.25C9.5697 11.88 9.4597 9.62 11.1797 7.87C12.2597 6.78 13.6997 6.23 15.5097 6.23C17.0697 6.23 18.3597 6.67 19.3697 7.56C20.3797 8.45 20.8897 9.66 20.8897 11.21C20.8897 12.23 20.6597 13.08 20.1997 13.78C19.9497 14.17 19.4597 14.68 18.7197 15.31C17.9297 15.97 17.4097 16.5 17.1697 16.91C16.7597 17.55 16.5497 18.41 16.5497 19.48H13.8897C13.8897 18.12 14.0497 17.06 14.3597 16.32C14.6197 15.69 15.1097 15.08 15.8197 14.47C16.5897 13.8 17.0597 13.36 17.2297 13.16C17.6197 12.65 17.8197 12.03 17.8197 11.31C17.8197 10.41 17.5297 9.7 16.9597 9.19C16.4797 8.78 15.9597 8.57 15.4097 8.57C13.4097 8.58 12.4097 9.8 12.4097 12.25ZM13.5197 23.42V22.02C13.5197 21.55 13.8997 21.18 14.3597 21.18H15.9797C16.4497 21.18 16.8197 21.56 16.8197 22.02V23.42C16.8197 23.89 16.4397 24.26 15.9797 24.26H14.3597C13.8997 24.27 13.5197 23.89 13.5197 23.42Z"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" />
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="30.5" height="30.5" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+
+
+
+                </a>
+                <a href="#" class="controls-link controls-link_logout">
+                  <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0097 14.24V20.53C18.0097 21.1 17.5497 21.57 16.9697 21.57H9.71973" stroke="#F1F1F1"
+                      stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path d="M0.25 19.94V1.29C0.25 0.72 0.71 0.25 1.29 0.25H16.98C17.55 0.25 18.02 0.71 18.02 1.29V8.27"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path
+                      d="M1.23992 0.440002L9.03992 1.9C9.43992 1.97 9.71992 2.32 9.71992 2.72V22.92C9.71992 23.45 9.23992 23.84 8.72992 23.74L0.939919 22.28C0.539919 22.21 0.259919 21.86 0.259919 21.46V1.26C0.249919 0.740002 0.729919 0.340002 1.23992 0.440002Z"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path d="M9.7793 9.84C9.8493 9.75 9.9593 9.7 10.0793 9.7H17.3293" stroke="#F1F1F1"
+                      stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path d="M17.3297 12.81H10.0797C9.91973 12.81 9.78973 12.72 9.71973 12.58" stroke="#F1F1F1"
+                      stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path
+                      d="M17.3301 9.59V8.06C17.3301 7.89 17.5401 7.8 17.6601 7.92L20.7901 11.05C20.9001 11.16 20.9001 11.35 20.7901 11.46L17.6601 14.59C17.5401 14.71 17.3301 14.63 17.3301 14.45V12.92"
+                      stroke="#F1F1F1" stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" />
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="21.12" height="24.01" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </a>
+              </div>
+
+              <img src="../../src/img/configurator/company-logo-small.svg" alt="super-logo" class="company-img"
+                width="81" height="81">
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <img src="../../src/img/configurator/Vector.png" alt="" class="vect">
+
+    </header>
+
+    <main class="main">
+      <section class="user-search">
+        <div class="col xl12">
+          <ul class="main-tabs">
+            <li class="main-tabs__items main-tabs__items--active">
+              <a href="#" class="main-tabs__link">
+                <svg width="29" height="39" viewBox="0 0 29 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.6498 18.1707C16.7345 18.1707 19.2352 15.6701 19.2352 12.5854C19.2352 9.50066 16.7345 7 13.6498 7C10.5651 7 8.06445 9.50066 8.06445 12.5854C8.06445 15.6701 10.5651 18.1707 13.6498 18.1707Z"
+                    stroke="#333333" stroke-width="0.7" stroke-miterlimit="10" />
+                  <path
+                    d="M4.80469 34.0004V28.4997C4.80469 24.3369 7.47648 20.9639 10.7689 20.9639H16.5316C19.8239 20.9639 22.4957 24.3369 22.4957 28.4997V34.0004"
+                    stroke="#333333" stroke-width="0.7" stroke-miterlimit="10" />
+                </svg>
+                My Account</a>
+            </li>
+            <li class="main-tabs__items">
+              <a href="#" class="main-tabs__link">
+                <svg width="29" height="39" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.27332 16.3791C7.40911 16.3791 8.32984 15.486 8.32984 14.3844C8.32984 13.2827 7.40911 12.3896 6.27332 12.3896C5.13753 12.3896 4.2168 13.2827 4.2168 14.3844C4.2168 15.486 5.13753 16.3791 6.27332 16.3791Z"
+                    stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" />
+                  <path
+                    d="M3.01758 22.0267V20.0635C3.01758 18.5793 3.99972 17.374 5.21518 17.374H7.33682C8.54686 17.374 9.53442 18.5793 9.53442 20.0635V22.0267"
+                    stroke="white" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" />
+                  <path d="M21.4228 22.1472H0.407227V0.394531H22.9801V22.1472" stroke="white" stroke-width="0.7"
+                    stroke-miterlimit="10" />
+                  <path
+                    d="M16.5225 11.0633C17.1465 12.9212 17.9061 14.9054 18.834 16.9843C20.082 19.7738 21.4169 22.2527 22.73 24.4159C22.8548 24.5791 23.0773 24.6475 23.2618 24.5896C23.4897 24.5159 23.6362 24.2738 23.5765 24.0264C22.8277 21.637 21.813 18.9633 20.4293 16.1264C19.4038 14.0159 18.324 12.1264 17.2658 10.458"
+                    stroke="white" stroke-width="0.7" stroke-miterlimit="10" />
+                  <path
+                    d="M10.2667 4.77827C10.2558 4.86248 11.5147 4.79932 12.3775 5.70458C12.8929 6.24669 13.0666 6.92563 13.2077 7.45721C13.517 8.64142 13.2294 9.08353 13.696 9.66248C13.7557 9.73616 14.2007 10.273 14.8844 10.352C15.3347 10.3993 15.8665 10.1414 16.9354 9.62037C17.2719 9.45721 17.4401 9.373 17.5052 9.32037C18.254 8.70985 18.292 7.30985 17.999 6.58353C17.0114 4.12563 10.2884 4.58353 10.2667 4.77827Z"
+                    stroke="white" stroke-width="0.7" stroke-miterlimit="10" />
+                  <path
+                    d="M15.0303 10.2257L15.3396 10.8046C15.5512 11.2046 16.0612 11.3625 16.4736 11.152L17.6674 10.552C18.0798 10.3467 18.2426 9.85199 18.0255 9.45199L17.7162 8.87305"
+                    stroke="white" stroke-width="0.7" stroke-miterlimit="10" />
+                </svg>
+                My Projects</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="search-container">
+          <div class="row account-row ">
+            <div class="col xl12">
+              <div class="database-toggle">
+                <a href="#" class="database-toggle__item">Company Profile</a>
+                <a href="#" class="database-toggle__item">My Profile</a>
+                <a href="#" class="database-toggle__item">Subscription & Billing</a>
+                <a href="#" class="database-toggle__item database-toggle__item--active ">Manage Multi Users</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <form action="#" class="company-form-profile">
+              <div class="col xl4 offset-xl1">
+                <div class="col xl12">
+                  <h5 class="profile-title">Edit Profile</h5>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">First name</label>
+                    </div>
+                    <div class="col xl7">
+                      <input type="text" class="browser-default config-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">Last name</label>
+                    </div>
+                    <div class="col xl7">
+                      <input type="text" class="browser-default config-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">User name</label>
+                    </div>
+                    <div class="col xl7">
+                      <input type="text" class="browser-default config-input">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">Phone number</label>
+                    </div>
+                    <div class="col xl2">
+                      <input type="text" class="browser-default config-input">
+                    </div>
+                    <div class="col xl5">
+                      <input type="text" class="browser-default config-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">Email</label>
+                    </div>
+                    <div class="col xl7">
+                      <input type="email" class="browser-default config-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl5">
+                      <input type="button" value="Confirm" class="button config-button">
+                    </div>
+                    <div class="col xl5">
+                      <input type="button" value="Cancel" class="button config-button cancel-btn">
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+              <div class="col xl3">
+                <div class="col xl12">
+                  <h5 class="profile-title">Change Password</h5>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl8">
+                    <input type="password" class="browser-default config-input" placeholder="Old password">
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl8">
+                    <input type="password" class="browser-default config-input" placeholder="New password">
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl8">
+                    <input type="password" class="browser-default config-input" placeholder="Confirm password">
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl6">
+                    <input type="button" value="Confirm" class="button config-button">
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+              <div class="col xl4">
+                <div class="col xl12">
+                  <h5 class="profile-title">Settings</h5>
+                </div>
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">Language</label>
+                    </div>
+                    <div class="col xl6">
+                      <select name="#" id="#" class="browser-default config-input">
+                        <option value="#">English</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">Currency</label>
+                    </div>
+                    <div class="col xl6">
+                      <input type="text" class="browser-default config-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row config-row">
+                  <div class="col xl12">
+                    <div class="col xl4">
+                      <label for="#" class="config-label">Units</label>
+                    </div>
+                    <div class="col xl6">
+                      <select name="#" id="#" class="browser-default config-input">
+                        <option value="#">Metric</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </form> 
+          </div>
+
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="../../src/js/materialize.min.js"></script>
+  <script src="../../src/select2/js/select2.min.js"></script>
+
+  <script src="../../src/js/main.js"></script>
+</body>
+
+</html>

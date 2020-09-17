@@ -1,4 +1,6 @@
 $baseColor: #117BC1;
+$cancelBtn: #C11C11;
+$addBtn: #F2994A;
 $baseColorLoght: #569ECD;
 $baseColorTable: #E6F3FF;
 $baseFont: 'Larsseit',
@@ -122,7 +124,13 @@ button,
   }
 }
 
+.cancel-btn {
+  background-color: $cancelBtn;
+}
 
+.add-btn{
+  background-color: $addBtn;
+}
 
 
 //configurator_screen_landing_page
@@ -487,9 +495,9 @@ button,
     }
   }
 
-  &_responsive{
-width: 100%;
-overflow-x: auto;
+  &_responsive {
+    width: 100%;
+    overflow-x: auto;
   }
 }
 
@@ -571,6 +579,7 @@ overflow-x: auto;
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  width: 100%;
 }
 
 .label-row-group {
@@ -696,7 +705,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   z-index: 10;
   background-color: #fff;
   margin-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .search-container {
@@ -715,6 +724,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
     border-top-left-radius: 25px;
     background-color: $baseColor;
     filter: drop-shadow(0px -3px 5px rgba(0, 0, 0, 0.25));
+
+    a {
+      padding: 10px;
+    }
 
 
     svg path {
@@ -1053,30 +1066,127 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   }
 }
 
-.centered, .centered td{
+.centered,
+.centered td {
   text-align: center;
 }
 
-.table-database{
+.table-database {
   width: 100%;
   overflow-x: auto;
 }
 
-.table-database__body tr{
-  border: 0.3px solid #CCCCCC;
-}
-.table-database__body td{
+.table-database__body tr {
   border: 0.3px solid #CCCCCC;
 }
 
-.pre-table-title td{
+.table-database__body td {
+  border: 0.3px solid #CCCCCC;
+}
+
+.pre-table-title td {
   text-align: center;
 }
 
-.pre-table-title td:first-child{
+.pre-table-title td:first-child {
   border-left: 1px solid transparent;
 
 }
+
+
+.account-row {
+  margin-bottom: 75px;
+}
+
+
+// 1111111111
+
+
+.profile-upload {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__logo {
+    margin-bottom: 65px;
+    width: 233px;
+    height: 233px;
+    color: #000;
+
+
+    p {
+      margin-left: 30px;
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+  }
+}
+
+.upload-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+.upload {
+  display: none;
+
+}
+
+#upload-file-inp {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 233px;
+  height: 233px;
+}
+
+
+.config-input {
+  width: 100%;
+  background: #F1F1F1;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  height: 60px;
+  border: none;
+  padding: 13px 25px;
+  margin-bottom: 18px;
+}
+
+.config-label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.config-button {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+
+input[type="password"].config-input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+
+  color: #797979;
+}
+
+
+
 
 // preload
 .dws-progress-bar {
