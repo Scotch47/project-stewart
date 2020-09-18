@@ -104,6 +104,10 @@ button:focus,
   color: #117BC1;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .cancel-btn {
   background-color: #C11C11;
 }
@@ -1161,6 +1165,32 @@ input[type="password"].config-input::placeholder {
   line-height: 20px;
   /* identical to box height */
   color: #797979;
+}
+
+.filter-tbtn {
+  cursor: pointer;
+}
+
+.payment-table {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.payment-table table tbody td {
+  padding: 0 15px;
+}
+
+.payment-t-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment-t-img img {
+  margin-right: 10px;
 }
 
 .dws-progress-bar {
