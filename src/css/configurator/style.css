@@ -134,7 +134,7 @@ button:focus,
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 70px;
-  z-index: 2;
+  z-index: 21;
   position: relative;
 }
 
@@ -170,6 +170,7 @@ button:focus,
   position: absolute;
   left: -30px;
   top: 5px;
+  z-index: 25;
 }
 
 .controls-link_notification {
@@ -252,6 +253,18 @@ button:focus,
   padding: 40px;
 }
 
+.news-aside-logo {
+  border-radius: 50%;
+}
+
+.news-aside-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
 .news-block {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 65%;
@@ -277,6 +290,9 @@ button:focus,
 }
 
 .blog-news-wrap {
+  max-width: 528px;
+  height: 345px;
+  background-color: rgba(0, 0, 0, 0.938);
   position: relative;
   margin-bottom: 15px;
   padding: 0;
@@ -330,6 +346,8 @@ button:focus,
 .blog-news-img {
   max-width: 100%;
   height: auto;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .load-project-main {
@@ -694,7 +712,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   position: relative;
   z-index: 10;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -709,8 +727,9 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
+  -webkit-transform: translateY(-27px);
+          transform: translateY(-27px);
+  z-index: 1;
 }
 
 .main-tabs__items {
@@ -986,6 +1005,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 .dealer-card-logo img {
   max-width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 .search-btn-wrap a {
