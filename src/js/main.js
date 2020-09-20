@@ -99,7 +99,7 @@ function readURL(input) {
 
     $(window).on('load', function () {
         var $preloader = $('#preloader');
-        $preloader.delay(3100).fadeOut('slow');
+        $preloader.delay(3400).fadeOut('slow');
      });
 
 });

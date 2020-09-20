@@ -117,7 +117,6 @@ button:focus,
 }
 
 .header {
-  height: 120px;
   position: relative;
   background-color: #117BC1;
 }
@@ -471,6 +470,19 @@ tr {
 
 .custom-btn {
   background-color: #fff;
+}
+
+.load-project-create {
+  height: 88vh;
+}
+
+.new-project-create {
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  max-width: 805px;
+  margin: 25px 0 30px 0;
 }
 
 .load-project_bg2 {

@@ -8,20 +8,21 @@
   <link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="../../src/select2/css/select2.min.css">
   <link rel="stylesheet" href="../../src/css/configurator/style.css">
-  <title>configurator_screen_new_load_project</title>
+  <title>users_screen_user_search</title>
 </head>
 
 <body>
+  <div class="body-wrap">
   <header class="header">
     <div class="row">
-      <div class="col xl2 offset-xl5 l3 logo">
+      <div class="col xl2 offset-xl5 s2 offset-s5 logo">
         <a href="#">
-          <img src="../../src/img/configurator/conf-logo.svg" alt="logo" class="logo-img">
+          <img src="../../src/img/configurator/conf-logo.svg" alt="logo" class="logo-img" width="175" height="37">
 
         </a>
       </div>
 
-      <div class="col xl5 l9 wrap-menu">
+      <div class="col xl5 s5 wrap-menu">
         <div class="main-nav">
           <ul class="menu">
             <li class="menu-item">
@@ -203,7 +204,7 @@
               </a>
             </div>
 
-            <img src="../../src/img/configurator/super-logo.svg" alt="super-logo" class="company-img">
+            <img src="../../src/img/configurator/super-logo.svg" alt="super-logo" class="company-img"  width="85" height="85">
           </div>
 
         </div>
@@ -219,18 +220,31 @@
 
   <main class="main">
     <section class="user-search">
-      <div class="search-tabs">
-        <a href="#" class="search-tabs__title">
-          <img src="../../src/img/configurator/search-icon.svg" alt="search"> User Search
-        </a>
+      <div class="col xl12">
+        <ul class="main-tabs">
+          <li class="main-tabs__items main-tabs__items--active">
+            <a href="#" class="main-tabs__link">
+              <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.5163 21.789C17.4532 21.789 22.2661 16.9762 22.2661 11.0393C22.2661 5.10237 17.4532 0.289551 11.5163 0.289551C5.57942 0.289551 0.766602 5.10237 0.766602 11.0393C0.766602 16.9762 5.57942 21.789 11.5163 21.789Z"
+                  stroke="#333333" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" />
+                <path
+                  d="M20.1658 17.5967C20.3064 18.2747 20.6206 19.2257 21.3896 19.9864C22.2579 20.8464 23.2667 21.0449 23.7794 21.2102C25.1024 21.6237 27.1283 23.0377 30.1052 27.536C29.7165 27.9247 29.3279 28.3133 28.9393 28.702L29.1873 28.4539C28.7987 28.8425 28.41 29.2312 28.0214 29.6198C23.523 26.643 22.109 24.6171 21.6956 23.294C21.5302 22.7731 21.3318 21.7643 20.4718 20.9043C19.7028 20.1353 18.7601 19.821 18.082 19.6805"
+                  stroke="#333333" stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="round" />
+              </svg>
+              User Search
+            </a>
+          </li>
+        </ul>
       </div>
+
 
 
       <div class="search-container">
         <div class="row">
-          <div class="col m6 l8 xl5 offset-xl7">
+          <div class="col s6 xl6 offset-xl6 offset-s6">
             <div class="row">
-              <div class="col l3">
+              <div class="col s3">
                 <div class="search-count-row">
                   <p>Total number:</p>
                   <span><strong>87</strong></span>
@@ -241,7 +255,7 @@
                 </div>
               </div>
 
-              <div class="col l3">
+              <div class="col s3">
                 <div class="search-count-row">
                   <p>Asia Pacific:</p>
                   <span>0</span>
@@ -252,7 +266,7 @@
                 </div>
               </div>
 
-              <div class="col l3">
+              <div class="col s3">
                 <div class="search-count-row">
                   <p>Europe:</p>
                   <span><strong>87</strong></span>
@@ -263,7 +277,7 @@
                 </div>
               </div>
 
-              <div class="col l3">
+              <div class="col s3">
                 <div class="search-count-row">
                   <p>N. America:</p>
                   <span>0</span>
@@ -276,17 +290,17 @@
         </div>
 
         <div class="row">
-          <div class="col xl6 l6">
+          <div class="col s6">
             <form action=" #" class="form-search">
               <div class="row">
-                <div class="col xl5 search-block">
+                <div class="col s5 search-block">
                   <label for="#" class="search-block__label">User Search</label>
                   <input type="search" class="browser-default search-block__input">
                 </div>
               </div>
 
               <div class="row">
-                <div class="col xl12 l6">
+                <div class="col xl12 s12">
                   <h5 class="search-title">Advanced Search</h5>
                   <div class="fixxx">
                     <div class="col xl6">
@@ -507,9 +521,9 @@
             </form>
           </div>
 
-          <div class="col xl6 l6">
+          <div class="col s6">
             <div class="row">
-              <div class="col xl12">
+              <div class="col s12">
                 <h5 class="search-title">Europe</h5>
 
                 <div class="country-block-fix">
@@ -518,7 +532,7 @@
                       <h6 class="search-title">Germany</h6>
                     </div>
 
-                    <div class="col xl12 search-w">
+                    <div class="col s12 search-w">
                       <div class="col search-country-item">
                         <div class="search-item-row">
                           <p>Screen Professional GmbH</p>
@@ -577,7 +591,7 @@
                       <h6 class="search-title">The Netherlands</h6>
                     </div>
 
-                    <div class="col xl12 search-w">
+                    <div class="col s12 search-w">
                       <div class="col search-country-item">
                         <div class="search-item-row">
                           <p>Screen Professional GmbH</p>
@@ -690,7 +704,7 @@
                     </div>
                   </div>
 
-                  
+
 
 
 
@@ -708,7 +722,7 @@
     </section>
 
   </main>
-
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
