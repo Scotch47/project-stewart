@@ -163,6 +163,10 @@ button:focus,
   z-index: 12;
 }
 
+.company-img {
+  border-radius: 50%;
+}
+
 .controls-link {
   position: absolute;
   left: -30px;
@@ -333,8 +337,8 @@ button:focus,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 800px;
   overflow-y: auto;
+  height: 85vh;
 }
 
 .project-control {
@@ -452,10 +456,6 @@ button:focus,
   background-color: #e5f3ff;
 }
 
-.table-wrap__body tr {
-  border: 1px solid #fff;
-}
-
 .table-wrap__body tr:hover {
   border: 1px solid #000000;
 }
@@ -463,6 +463,10 @@ button:focus,
 .table-wrap_responsive {
   width: 100%;
   overflow-x: auto;
+}
+
+tr {
+  border-bottom: none;
 }
 
 .custom-btn {

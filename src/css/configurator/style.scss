@@ -144,7 +144,6 @@ button,
 .header {
   height: 120px;
 
-
   // background-repeat: no-repeat;
   // background-size: contain;
   // background:url(../../img/configurator/header-bg.png);
@@ -195,6 +194,10 @@ button,
   position: relative;
   z-index: 12;
 
+}
+
+.company-img{
+  border-radius: 50%;
 }
 
 
@@ -367,9 +370,10 @@ button,
 
 .load-project-main {
   display: flex;
-  min-height: 800px;
+  // min-height: 800px;
   overflow-y: auto;
   // flex-wrap: wrap;
+  height: 85vh;
 }
 
 .project-control {
@@ -489,15 +493,12 @@ button,
       background-color: #e5f3ff;
     }
 
-    tr {
-      border: 1px solid #fff;
-
-    }
-
     tr:hover {
       border: 1px solid #000000;
-
+    
     }
+
+    
   }
 
   &_responsive {
@@ -505,6 +506,13 @@ button,
     overflow-x: auto;
   }
 }
+
+tr{
+  border-bottom: none;
+}
+
+
+
 
 .custom-btn {
   background-color: #fff;
