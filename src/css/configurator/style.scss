@@ -177,8 +177,6 @@ button,
 .wrap-menu {
   background-color: $baseColor;
   // border-bottom-left-radius: 200px;
-
-
 }
 
 .main-nav {
@@ -386,7 +384,9 @@ button,
   filter: brightness(50%);
 }
 
-
+.main{
+  position: relative;
+}
 
 
 //configurator_screen_new_load_project
@@ -777,23 +777,26 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   max-width: 95%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 
 .main-tabs {
   display: flex;
-  position: relative;
-  // transform: translateY(-65px);
-  transform: translateY(-25px);
+  // position: relative;
+  // transform: translateY(-25px);
+
+  position: absolute;
+  top: -100px;
 
   z-index: 1;
 
   &__items {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+    box-shadow: 6px -11px 20px  rgba(0, 0, 0, 0.11);
     background-color: $baseColor;
-    // filter: drop-shadow(0px -7px 5px rgba(0, 0, 0, 0.25));
-    border: 1px solid lightgray;
-    border-bottom: 1px solid transparent;
+    // border: 1px solid lightgray;
+    // border-bottom: 1px solid transparent;
     position: relative;
     z-index: 1;
 
@@ -837,6 +840,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
     display: flex;
     align-items: center;
     width: 145px;
+    height: 60px;
 
     svg {
       margin-right: 15px;
@@ -899,7 +903,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   width: 90%;
 }
 
-.search-block_btn{
+.search-block_btn {
   margin-top: 45px;
 }
 
@@ -1252,7 +1256,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   height: auto;
 }
 
-.config-button:disabled{
+.config-button:disabled {
   background: #858585;
   cursor: not-allowed;
 }
@@ -1263,15 +1267,41 @@ input[type="password"].config-input::placeholder {
   font-weight: 300;
   font-size: 20px;
   line-height: 20px;
-  /* identical to box height */
-
-
   color: #797979;
 }
 
-.filter-tbtn {
+.more-btn {
+  color: #999999;
   cursor: pointer;
+  vertical-align: middle;
+  line-height: 24px;
+  height: 28px;
+  font-size: 2rem;
+  user-select: none;
+
 }
+
+.filter-tbtn {
+  color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 24px;
+  height: 28px;
+  font-size: 2.5rem;
+  user-select: none;
+
+}
+
+.filter-rbtn {
+  color: #333333;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 24px;
+  height: 28px;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
 
 .payment-table {
   max-height: 500px;
@@ -1394,15 +1424,35 @@ input[type="password"].config-input::placeholder {
 
 // media
 
-// @media(min-width: 1900px) {
+@media(min-width: 1420px) and (max-width: 1750px) {
 
-//   .search-country-item {
-//     width: 33.3333333333%;
-//     margin-left: auto;
-//     left: auto;
-//     right: auto;
-//   }
-// }
+  html,
+  body {
+    -ms-zoom: 90%;
+    zoom: 90%;
+  }
+
+}
+
+@media(min-width: 1265px) and (max-width: 1420px) {
+
+  html,
+  body {
+    -ms-zoom: 85%;
+    zoom: 85%;
+  }
+
+}
+
+@media(max-width: 1265px) {
+
+  html,
+  body {
+    -ms-zoom: 75%;
+    zoom: 75%;
+  }
+
+}
 
 
 
@@ -1438,17 +1488,13 @@ input[type="password"].config-input::placeholder {
 
 // }
 
-// @media(max-width: 1245px) {
-//   .blog-news-wrap {
-//     position: relative;
-//     margin-bottom: 25px;
-//     padding: 0;
-//     flex: 0 0 100%;
-
-//   }
+@media(min-width: 2050px) {
+  .news-block{
+    flex: 1 1 47%;
+  }
 
 
-// }
+}
 
 // @media(max-width: 1200px) {
 //   .vect {
