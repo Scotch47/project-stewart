@@ -79,9 +79,7 @@ function readURL(input) {
 
 // Or with jQuery
 
-$('.dropdown-trigger').dropdown({
-    constrainWidth: true,
-});
+
 
 $(document).ready(function () {
     if ($("#preloader").length) {
@@ -102,5 +100,24 @@ $(document).ready(function () {
         $preloader.delay(3400).fadeOut('slow');
     });
 
+
+    // drop-pricing
+    $('.dropdown-trigger').dropdown({
+        closeOnClick: false,
+    });
+
+
+
+    $('.dropdown-close').on('click', function () {
+        $('.dropdown-trigger').dropdown('close')
+
+    })
+
+
+
+});
+
+$('.dropContToggle').on('click', function () {
+    $('.drop-cont').toggle('hide');
 
 });

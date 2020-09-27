@@ -129,6 +129,10 @@ button,
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .cancel-btn {
   background-color: $cancelBtn;
 }
@@ -384,7 +388,7 @@ button,
   filter: brightness(50%);
 }
 
-.main{
+.main {
   position: relative;
 }
 
@@ -793,7 +797,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   &__items {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    box-shadow: 6px -11px 20px  rgba(0, 0, 0, 0.11);
+    box-shadow: 6px -11px 20px rgba(0, 0, 0, 0.11);
     background-color: $baseColor;
     // border: 1px solid lightgray;
     // border-bottom: 1px solid transparent;
@@ -1420,6 +1424,88 @@ input[type="password"].config-input::placeholder {
   overflow-x: auto;
 }
 
+.dropdown-content {
+  overflow: visible;
+}
+
+.drop-cont {
+  display: none;
+  min-width: 220px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: -270px;
+  background: #fff;
+  border-radius: 5px;
+
+}
+
+.drop-cont li:first-child {
+  text-align: center;
+}
+
+.drop-cont-title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  padding-top: 15px;
+}
+
+.drop-cont>.select2-selection .select2-selection--single {
+  width: 150px !important;
+}
+
+
+.pricing-drop {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.13);
+  border-radius: 6px;
+  min-width: 290px;
+  min-height: 303px;
+  border-radius: 5px;
+
+}
+
+.config-row >.select2 select2-container .select2-container--default .select2-container--disabled .select2-container--focus{
+  width: 400px!important;
+}
+
+.hide {
+  display: block;
+}
+
+.drop-price-row div>.pricing-drop__btn i {
+  color: #fff;
+
+}
+
+.pricing-drop li>a {
+  color: #333333;
+}
+
+
+.drop-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-price-row div>.pricing-drop__btn {
+  min-width: 30px;
+  height: 30px;
+  background: $baseColor;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.drop-price-row div>.pricing-drop__btn--green {
+  background: #197E17;
+}
+
+.drop-price-row div>.pricing-drop__btn--red {
+  background: #C11C11;
+}
 
 
 // media
@@ -1489,7 +1575,7 @@ input[type="password"].config-input::placeholder {
 // }
 
 @media(min-width: 2050px) {
-  .news-block{
+  .news-block {
     flex: 1 1 47%;
   }
 
