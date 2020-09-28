@@ -5,22 +5,23 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="../../src/css/materialize.min.css" media="screen,projection" />
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport">
 	<link rel="stylesheet" href="../../src/select2/css/select2.min.css">
 	<link rel="stylesheet" href="../../src/css/main.css">
 	<title>log_in_register_payment</title>
 </head>
 
 <body>
+	<div class="body-wrap">
 	<main class="login-page">
 		<div class="login reg-block">
 			<div class="row reg-block-top">
-				<div class="col l3 offset-l4 s3 offset-s0 login-logo__small">
+				<div class="col s3 offset-s4 login-logo__small">
 					<a href="#"> <img src="../../src/img/small_logo.svg" alt="small_logo"></a>
 
 				</div>
 
-				<div class="col l2 s4 offset-l3  offset-s4 select-new-wrap">
+				<div class="col s2 offset-s3 select-new-wrap">
 					<select name="#" id="" class="select-cust browser-default form-register__input">
 						<option value="">English</option>
 						<option value="">Russian</option>
@@ -31,16 +32,9 @@
 			<form action="#">
 				<div class="container">
 					<div class="row">
-						<div class="col xl6">
+						<div class="col s6">
 							<h3 class="subsc-title">Payment</h3>
-							<!-- <div class="dealer-row company-row payment-group">
-								<label for="CardType">Card type</label>
-								<select name="Country" id="Country" class="browser-default form-register__input payment-select">
-									<option data-img_src="../../src/img/payment/mastercard.svg" value="1">MasterCard</option>
-									<option data-img_src="../../src/img/payment/mastercard.svg" value="2">VISA</option>
-								</select>
-							</div> -->
-
+				
 							<div class="dealer-row company-row">
 								<label for="CardHolderName">CardHolder name</label>
 								<input type="text" name="CardHolderName" id="CardHolderName"
@@ -89,7 +83,7 @@
 							</div>
 						</div>
 
-						<div class="col xl5 offset-xl1">
+						<div class="col s5 offset-s1">
 							<div class="payment-int-block ">
 								<h3>Issuing bank’s site frame</h3>
 							</div>
@@ -103,7 +97,7 @@
 
 	<div class="login-footer-step">
 		<div class="row">
-			<div class="col l6 offset-l6 ">
+			<div class="col s6 offset-s6 ">
 				<a href="#" class="button step-button">Back</a>
 				<button class="button step-button disabled-btn">Next</button>
 			</div>
@@ -112,7 +106,7 @@
 
 		<div class="login-footer">
 			<div class="row">
-				<div class="col l12">
+				<div class="col s12">
 					<div class="login-footer-wrap">
 						<div class="login-footer-wrap__copy">
 							<a class="login-footer-wrap__link" href="#">© Copyright 2020 Cinema101 All rights reserved
@@ -130,7 +124,7 @@
 
 		</div>
 	</main>
-
+</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous"></script>
 	<script src="../../src/js/materialize.min.js"></script>

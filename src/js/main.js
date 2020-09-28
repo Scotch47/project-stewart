@@ -106,18 +106,19 @@ $(document).ready(function () {
         closeOnClick: false,
     });
 
-
-
     $('.dropdown-close').on('click', function () {
         $('.dropdown-trigger').dropdown('close')
 
     })
+}); 
 
+$('.dropCurrToggle').on('click', function () {
+    $('.drop-cont-curr').toggle('hide');
 
+});
+
+$('.dropRegToggle').on('click', function () {
+    $('.drop-reg-cont').toggle('hide');
 
 });
 
-$('.dropContToggle').on('click', function () {
-    $('.drop-cont').toggle('hide');
-
-});

@@ -47,8 +47,20 @@ sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    background: #000
+}
+
 body {
     height: 100%;
+}
+
+.body-wrap {
+    min-height: 100%;
+    width: 100%;
+    min-width: 1750px;
 }
 
 body,
@@ -104,9 +116,17 @@ button,
 
 }
 
+button:disabled {
+    color: #333333;
+    background: #999999;
+    cursor: not-allowed;
+}
+
 .disabled-btn {
     color: #333333;
     background: #999999;
+    cursor: not-allowed;
+
 }
 
 
@@ -120,4 +140,35 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.17);
     padding: 5px 45px 0 20px;
     width: 81%;
+}
+
+
+@media(min-width: 1420px) and (max-width: 1750px) {
+
+    html,
+    body {
+        -ms-zoom: 90%;
+        zoom: 90%;
+    }
+
+}
+
+@media(min-width: 1265px) and (max-width: 1420px) {
+
+    html,
+    body {
+        -ms-zoom: 85%;
+        zoom: 85%;
+    }
+
+}
+
+@media(max-width: 1265px) {
+
+    html,
+    body {
+        -ms-zoom: 75%;
+        zoom: 75%;
+    }
+
 }

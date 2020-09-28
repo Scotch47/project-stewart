@@ -433,3 +433,10 @@ color: #000;
 	float: left;
 	margin-right: 10px;
 }
+
+@media(min-width: 1920px){
+	.user-profile{
+			max-height: 100%;
+			// overflow: visible;
+	}
+}

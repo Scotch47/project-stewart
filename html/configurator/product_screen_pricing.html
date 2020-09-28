@@ -336,8 +336,8 @@
 
                             <ul id='dropdown1' class='dropdown-content pricing-drop'>
                               <li><a href="#!">Edit Price</a></li>
-                              <li><a href="#!" class="dropContToggle" data-target='dropdown1'>Add Currency</a>
-                                <ul class="drop-cont">
+                              <li><a href="#!" class="dropCurrToggle">Add Currency</a>
+                                <ul class="drop-cont-curr drop-cont">
                                   <li>
                                     <p class="drop-cont-title">Add Currency</p>
                                   </li>
@@ -345,7 +345,8 @@
                                     <div class="row config-row">
                                       <div class="project-select-wrap text-center">
                                         <select name="#" id="#"
-                                          class="project-input browser-default custom-select config-input" disabled width="50%">
+                                          class="project-input browser-default custom-select config-input" disabled
+                                          width="50%">
                                           <option value="#">EUR</option>
                                         </select>
                                       </div>
@@ -364,7 +365,31 @@
                               </li>
 
                               <li><a href="#!">Delete Currency</a></li>
-                              <li><a href="#!">Add Region</a></li>
+                              <li><a href="#!" class="dropRegToggle">Add Region</a>
+
+                                <ul class="drop-reg-cont drop-cont">
+                                  <li>
+                                    <p class="drop-cont-title">Add Region</p>
+                                  </li> 
+                                  <li>
+                                    <div class="row config-row text-center">
+                                      <div class="col s10 offset-s1">
+                                          <input type="text" class="browser-default config-input" disabled>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="divider" tabindex="-1"></li>
+                                  <li class="drop-price-row">
+                                    <div class="col s12">
+                                      <a href="#!" class="pricing-drop__btn pricing-drop__btn--green"><i
+                                          class="small material-icons">done</i></a>
+                                      <a href="#!" class="pricing-drop__btn pricing-drop__btn--red dropdown-close"><i
+                                          class="small material-icons dropContToggle">close</i></a>
+                                    </div>
+                                  </li>
+                                </ul>
+
+                              </li>
                               <li><a href="#!">Delete Region</a></li>
                               <li class="divider" tabindex="-1"></li>
 

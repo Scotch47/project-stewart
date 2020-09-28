@@ -1457,6 +1457,10 @@ input[type="password"].config-input::placeholder {
   background: #C11C11;
 }
 
+.modal-section {
+  padding: 20px 15px;
+}
+
 @media (min-width: 1420px) and (max-width: 1750px) {
   html,
   body {
