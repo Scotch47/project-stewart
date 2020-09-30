@@ -221,9 +221,205 @@
     </header>
 
     <main class="main">
-  <section class="modal-section">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, voluptas suscipit ab nihil optio necessitatibus quidem expedita dolor tenetur, similique cum debitis sit unde voluptatibus deserunt nobis ipsum sapiente dolore.
-  </section>
+      <section class="modal-section">
+        <div class="container">
+          <div class="row">
+            <div class="col s1">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">proceed?</a>
+
+              <div id="modal1" class="modal modal-container">
+                <div class="modal-content">
+                  <i class="material-icons btn-close modal-close">close</i>
+                  <h4 class="text-center modal-title">How do you want to proceed?</h4>
+                </div>
+
+                <div class="modal-footer">
+                  <div class="col s12">
+                    <div class="col s3 offset-s3">
+                      <a href="#" class="button ">Request for Quotation</a>
+                    </div>
+                    <div class="col s3">
+                      <a href="#" class="button config-button">Make Enquiry</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col s1">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal2">to save changes</a>
+
+              <div id="modal2" class="modal modal-container">
+                <div class="modal-content">
+                  <i class="material-icons btn-close modal-close">close</i>
+                  <h4 class="text-center modal-title">Do you want to save changes <br> before leaving the page?</h4>
+                </div>
+
+                <div class="modal-footer text-center">
+                  <div class="col s12">
+                    <div class="col s2 offset-s2">
+                      <a href="#" class="modal-save__btn--yes modal-save__btn">Yes</a>
+                    </div>
+                    <div class="col s2">
+                      <a href="#" class="modal-save__btn modal-save__btn--no">No</a>
+                    </div>
+                    <div class="col s2">
+                      <a href="#" class="modal-save__btn">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col s1">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">contactform</a>
+
+              <div id="modal3" class="modal modal-container">
+                <div class="modal-content">
+                  <i class="material-icons btn-close modal-close">close</i>
+                  <h4 class="text-center modal-title">Please fill out the contact form below</h4>
+                </div>
+
+                <div class="container">
+                  <div class="row config-row">
+                    <div class="col s12 project-select-wrap">
+                      <div class="col s4">
+                        <label for="#" class="config-label"><span>*</span> First Name:</label>
+                      </div>
+                      <div class="col s7">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s12 project-select-wrap">
+                      <div class="col s4">
+                        <label for="#" class="config-label"><span>*</span> Last Name:</label>
+                      </div>
+                      <div class="col s7">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s12 project-select-wrap">
+                      <div class="col s4">
+                        <label for="#" class="config-label"><span>*</span> Email:</label>
+                      </div>
+                      <div class="col s7">
+                        <input type="email" class="browser-default config-input" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s12">
+                      <div class="col s4">
+                        <label for="#" class="config-label"><span>*</span> Phone number</label>
+                      </div>
+                      <div class="col s2">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+                      <div class="col s5">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s12 project-select-wrap">
+                      <div class="col s4">
+                        <label for="#" class="config-label"><span>*</span> Region</label>
+                      </div>
+                      <div class="col s7">
+                        <select class="project-input browser-default custom-select config-input" disabled style="width: 100%;">
+                          <option value="#">Region Dropbox</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s12 project-select-wrap">
+                      <div class="col s4">
+                        <label for="#" class="config-label"><span>*</span> Country</label>
+                      </div>
+                      <div class="col s7">
+                        <select class="project-input browser-default custom-select config-input" disabled style="width: 100%;"> 
+                          <option value="#">Country Dropbox</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s12 project-select-wrap">
+                      <div class="col s4">
+                        <label for="#" class="config-label">Address</label>
+                      </div>
+
+                      <div class="col s7">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+
+                      <div class="col s7 offset-s4">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+
+                      <div class="col s7 offset-s4">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s7">
+                      <div class="col s7">
+                        <label for="#" class="config-label"><span>*</span> Zip/Post code</label>
+                      </div>
+                      <div class="col s5">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+                    </div>
+
+                    <div class="col s4">
+                      <div class="col s3">
+                        <label for="#" class="config-label">State</label>
+                      </div>
+                      <div class="col s9">
+                        <input type="text" class="browser-default config-input" disabled>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row config-row">
+                    <div class="col s3 text-center offset-s5">
+                      <input type="button" value="Next" class="button config-button">
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </section>
     </main>
 
 

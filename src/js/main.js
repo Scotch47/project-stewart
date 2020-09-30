@@ -122,3 +122,5 @@ $('.dropRegToggle').on('click', function () {
 
 });
 
+$('.modal').modal();
+

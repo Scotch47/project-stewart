@@ -104,6 +104,14 @@ button:focus,
   color: #117BC1;
 }
 
+td, th {
+  border-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -668,7 +676,6 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 }
 
 .select2-container--default.select2-container--disabled .select2-selection--single {
-  background-color: #E6F3FF;
   cursor: not-allowed;
 }
 
@@ -1104,6 +1111,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   margin-bottom: 75px;
 }
 
+.table-database__body td.custom-btn {
+  border: 1px solid transparent;
+}
+
 .profile-upload {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1127,6 +1138,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   margin-left: 30px;
   font-weight: 300;
   font-size: 20px;
+}
+
+.multiuser-count {
+  margin-bottom: 55px;
 }
 
 .upload-img {
@@ -1174,11 +1189,15 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   color: #000000;
 }
 
+.config-label span {
+  color: #C11C11;
+}
+
 .config-button {
   width: 100%;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
   height: auto;
@@ -1457,8 +1476,50 @@ input[type="password"].config-input::placeholder {
   background: #C11C11;
 }
 
+.modal .modal-footer {
+  height: 85px;
+}
+
 .modal-section {
   padding: 20px 15px;
+}
+
+.modal-container {
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.09);
+          box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.09);
+  border-radius: 26px;
+  max-height: 80%;
+  padding: 20px;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.modal-save__btn {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  color: #333333;
+  text-align: center;
+}
+
+.modal-save__btn--yes {
+  color: #197E17;
+}
+
+.modal-save__btn--no {
+  color: #C11C11;
 }
 
 @media (min-width: 1420px) and (max-width: 1750px) {
