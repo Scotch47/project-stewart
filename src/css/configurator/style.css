@@ -96,15 +96,19 @@ button:active,
           filter: saturate(150%);
   background: #fff;
   color: #117BC1;
+  border: 1px solid #117BC1;
+  outline: transparent;
 }
 
 button:focus,
 .button:focus {
   background: #fff;
   color: #117BC1;
+  border: 1px solid #117BC1;
 }
 
-td, th {
+td,
+th {
   border-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -126,6 +130,10 @@ td, th {
 
 .add-btn {
   background-color: #F2994A;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .header {
@@ -215,6 +223,23 @@ td, th {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  top: -5px;
+  left: 11px;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+
+.controls-alert--check {
+  background-color: #117BC1;
+  position: absolute;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
   font-weight: 300;
   font-size: 12px;
   text-align: center;
@@ -524,6 +549,7 @@ tr {
   border-radius: 11px;
   max-width: 805px;
   margin: 25px 0 30px 0;
+  height: 85%;
 }
 
 .load-project_bg2 {
@@ -764,8 +790,8 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 .main-tabs__items {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  -webkit-box-shadow: 6px -11px 20px rgba(0, 0, 0, 0.11);
-          box-shadow: 6px -11px 20px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.11);
   background-color: #117BC1;
   position: relative;
   z-index: 1;
@@ -884,6 +910,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   color: #000000;
   margin-top: 17px;
   margin-bottom: 20px;
+}
+
+.search-checkbox label {
+  display: inline-block;
 }
 
 [type="checkbox"] + .search-checkbox__label:not(.lever) {
@@ -1113,6 +1143,14 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .table-database__body td.custom-btn {
   border: 1px solid transparent;
+}
+
+.share-icon {
+  background-color: #FFC805;
+}
+
+.upgrade-input .select2-container--default .select2-selection--single {
+  background-color: #FFC773;
 }
 
 .profile-upload {
@@ -1520,6 +1558,110 @@ input[type="password"].config-input::placeholder {
 
 .modal-save__btn--no {
   color: #C11C11;
+}
+
+.dot-icon {
+  color: #117BC1;
+  vertical-align: bottom;
+}
+
+.modal-request {
+  max-width: 676px;
+}
+
+.notification-modal {
+  max-width: 460px;
+  height: 303px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: 6px;
+  z-index: 55;
+  top: 10px;
+  right: -920px;
+}
+
+.notification-message:nth-child(odd) {
+  background: #E5F3FF;
+}
+
+.notification-message:nth-child(even) {
+  background: #ffffff;
+}
+
+.notification-wrap {
+  margin-top: 30px;
+}
+
+.notification-message {
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification-message__text {
+  font-weight: normal;
+  line-height: 14px;
+  color: #333333;
+}
+
+.notification-message__text h6 {
+  font-size: 12px;
+}
+
+.notification-message__text p {
+  font-size: 10px;
+}
+
+.notification-message__date {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 9px;
+  color: #999999;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: right;
+}
+
+@media (min-width: 1810px) {
+  .country-block-fix .search-country-block:nth-child(odd) .search-w {
+    width: 95%;
+  }
+}
+
+@media (min-width: 2140px) {
+  .country-block-fix .search-country-block:nth-child(odd) .search-w {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu-item {
+    width: 30%;
+  }
+  .main-table-form {
+    overflow: visible;
+    height: 100%;
+  }
 }
 
 @media (min-width: 1420px) and (max-width: 1750px) {

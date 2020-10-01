@@ -114,18 +114,22 @@ button,
     filter: saturate(150%);
     background: #fff;
     color: $baseColor;
+    border: 1px solid $baseColor;
+    outline: transparent;
 
   }
 
   &:focus {
     background: #fff;
     color: $baseColor;
-
-
+    border: 1px solid $baseColor;
   }
 }
 
-td, th {
+
+
+td,
+th {
   border-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -147,6 +151,10 @@ td, th {
 
 .add-btn {
   background-color: $addBtn;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 
@@ -256,6 +264,22 @@ td, th {
   color: #FFFFFF;
   vertical-align: middle;
 
+}
+
+.controls-alert--check {
+  background-color: #117BC1;
+  position: absolute;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  top: -5px;
+  left: 11px;
+  color: #FFFFFF;
+  vertical-align: middle;
 }
 
 
@@ -542,7 +566,7 @@ td, th {
     overflow-x: auto;
   }
 
-  
+
 
 }
 
@@ -568,8 +592,8 @@ tr {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
   border-radius: 11px;
   max-width: 805px;
-  // max-height: 700px;
   margin: 25px 0 30px 0;
+  height: 85%;
 
 }
 
@@ -806,7 +830,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   &__items {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    box-shadow: 6px -11px 20px rgba(0, 0, 0, 0.11);
+    box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.11);
     background-color: $baseColor;
     // border: 1px solid lightgray;
     // border-bottom: 1px solid transparent;
@@ -935,7 +959,9 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   margin-bottom: 20px;
 }
 
-
+.search-checkbox label {
+  display: inline-block;
+}
 
 [type="checkbox"]+.search-checkbox__label:not(.lever) {
   font-style: normal;
@@ -1190,9 +1216,22 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 }
 
 
-.table-database__body td.custom-btn{
+.table-database__body td.custom-btn {
   border: 1px solid transparent;
 }
+
+.share-icon {
+  background-color: #FFC805;
+}
+
+
+
+.upgrade-input .select2-container--default .select2-selection--single {
+  background-color: #FFC773;
+
+}
+
+
 
 
 // 1111111111
@@ -1218,7 +1257,8 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
   }
 }
-.multiuser-count{
+
+.multiuser-count {
   margin-bottom: 55px;
 }
 
@@ -1568,16 +1608,121 @@ input[type="password"].config-input::placeholder {
   color: #333333;
   text-align: center;
 
-  &--yes{
+  &--yes {
     color: #197E17;
   }
 
-  &--no{
+  &--no {
     color: #C11C11;
   }
 }
 
+.dot-icon {
+  color: $baseColor;
+  vertical-align: bottom;
+}
+
+.modal-request {
+  max-width: 676px;
+}
+
+.notification-modal {
+  max-width: 460px;
+  height: 303px;
+  overflow-y: auto;
+
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+  border-radius: 6px;
+  z-index: 55;
+  top: 10px;
+  right: -920px;
+}
+
+.notification-message:nth-child(odd) {
+  background: #E5F3FF;
+}
+
+.notification-message:nth-child(even) {
+  background: #ffffff;
+}
+
+.notification-wrap {
+  margin-top: 30px;
+
+}
+
+.notification-message {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-weight: normal;
+    line-height: 14px;
+    color: #333333;
+
+    h6 {
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 9px;
+    color: #999999;
+    align-self: center;
+    text-align: right;
+
+  }
+}
+
+
 // media
+@media(min-width: 1810px) {
+  .country-block-fix .search-country-block:nth-child(odd) .search-w {
+    width: 95%;
+  }
+
+}
+
+@media(min-width: 2140px) {
+  .country-block-fix .search-country-block:nth-child(odd) .search-w {
+    width: 80%;
+  }
+}
+
+
+
+@media(min-width: 1920px) {
+  .main-nav {
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    width: 30%;
+  }
+
+  .main-table-form{
+    overflow: visible;
+    height: 100%;
+  }
+
+
+}
+
+
 
 @media(min-width: 1420px) and (max-width: 1750px) {
 
