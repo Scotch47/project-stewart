@@ -226,10 +226,9 @@
 
     <main class="main">
       <section class="configurator-section">
-        <div class="contaoner-con">
-          <canvas id="unity-canvas" width="1920" height="1080"
-            style="background: rgb(35, 31, 32); cursor: default;"></canvas>
-          <script src="../../src/config/Build/webGL Conf (build 13(17)).framework.js"></script>
+           
+        <div id="gameContainer" class="container-con">
+          <canvas id="unity-canvas" data-pixel-art=""></canvas>
           <script src="../../src/config/Build/webGL Conf (build 13(17)).loader.js"></script>
           <script>
             createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -240,6 +239,42 @@
               companyName: "Cinema 101",
               productName: "Stewart Filmscreen Config",
               productVersion: "1.0",
+            }).then(function (instance) {
+              var canvas = instance.Module.canvas;
+              var container = canvas.parentElement;
+              function onResize() {
+                var w;
+                var h;
+      
+                if (scaleToFit) {
+                  w = window.innerWidth;
+                  h = window.innerHeight;
+      
+                  var r = 1080 / 1920;
+      
+                  if (w * r > window.innerHeight) {
+                    w = Math.min(w, Math.ceil(h / r));
+                  }
+                  h = Math.floor(w * r);
+                } else {
+                  w = 1920;
+                  h = 1080;
+                }
+      
+                container.style.width = canvas.style.width = w + "px";
+                container.style.height = canvas.style.height = h + "px";
+                container.style.top = 0 + "px";
+                container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
+              }
+      
+              var scaleToFit;
+              try {
+                scaleToFit = !!JSON.parse("");
+              } catch (e) {
+                scaleToFit = true;
+              }
+              window.addEventListener('resize', onResize);
+              onResize();
             });
           </script>
         </div>

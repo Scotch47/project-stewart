@@ -758,8 +758,8 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   height: auto;
 }
 
-.contaoner-con {
-  max-width: 1430px;
+.container-con {
+  max-width: 1920px;
   margin: 0 auto;
 }
 
