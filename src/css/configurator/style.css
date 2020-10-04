@@ -539,7 +539,7 @@ tr {
 }
 
 .load-project-create {
-  height: 88vh;
+  height: 87vh;
 }
 
 .new-project-create {
@@ -548,8 +548,8 @@ tr {
           box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
   border-radius: 11px;
   max-width: 805px;
-  margin: 25px 0 30px 0;
-  height: 85%;
+  margin: 20px 0 20px 0;
+  min-height: 95%;
 }
 
 .load-project_bg2 {
@@ -711,7 +711,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
   padding-left: 20px;
-  width: 93%;
+  width: 86%;
 }
 
 .select2-container--open .select2-dropdown {
@@ -753,16 +753,6 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   width: 500px;
 }
 
-#unity-canvas {
-  width: 100%;
-  height: auto;
-}
-
-.container-con {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .user-search {
   position: relative;
   z-index: 10;
@@ -790,8 +780,8 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 .main-tabs__items {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  -webkit-box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.11);
-          box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 6px -13px 20px rgba(0, 0, 0, 0.04);
   background-color: #117BC1;
   position: relative;
   z-index: 1;
@@ -838,7 +828,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 }
 
 .main-tabs__link svg {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .search-title {
@@ -914,6 +904,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .search-checkbox label {
   display: inline-block;
+  width: 160px;
 }
 
 [type="checkbox"] + .search-checkbox__label:not(.lever) {
@@ -1039,6 +1030,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .dealer-search-item {
   margin-bottom: 30px;
+  text-align: right;
 }
 
 .main-table-dealer {
@@ -1480,6 +1472,7 @@ input[type="password"].config-input::placeholder {
 
 .drop-price-row div > .pricing-drop__btn i {
   color: #fff;
+  border-radius: 5px;
 }
 
 .pricing-drop li > a {
@@ -1603,7 +1596,7 @@ input[type="password"].config-input::placeholder {
   -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 0 15px 5px 15px;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1620,11 +1613,11 @@ input[type="password"].config-input::placeholder {
 }
 
 .notification-message__text h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .notification-message__text p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .notification-message__date {
@@ -1636,6 +1629,39 @@ input[type="password"].config-input::placeholder {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: right;
+}
+
+#unity-canvas {
+  width: 100%;
+  height: auto;
+}
+
+.container-con {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+div#gameContainer {
+  background: transparent !important;
+  position: absolute;
+}
+
+div#gameContainer canvas {
+  position: absolute;
+}
+
+div#gameContainer canvas[data-pixel-art="true"] {
+  position: absolute;
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  image-rendering: -o-pixelated;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 @media (min-width: 1810px) {
@@ -1650,7 +1676,7 @@ input[type="password"].config-input::placeholder {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1925px) {
   .main-nav {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1661,6 +1687,16 @@ input[type="password"].config-input::placeholder {
   .main-table-form {
     overflow: visible;
     height: 100%;
+  }
+  .payment-table {
+    max-height: 950px;
+  }
+  .main-table-price {
+    max-height: 700px;
+  }
+  .new-project-create {
+    height: 85%;
+    overflow-y: auto;
   }
 }
 

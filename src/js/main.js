@@ -72,10 +72,6 @@ function readURL(input) {
 }
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.dropdown-trigger');
-//     var instances = M.Dropdown.init(elems, options);
-//   });
 
 // Or with jQuery
 
@@ -92,7 +88,7 @@ $(document).ready(function () {
             percent: 0,
             // counter_clockwise: true,
             starting_position: 25
-        }).circularProgress('animate', 100, 2000);
+        }).circularProgress('animate', 100, 2800);
     }
 
     $(window).on('load', function () {

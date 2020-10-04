@@ -43,12 +43,12 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/webGL Conf (build 13(17)).loader.js"></script>
+		<script src="Build/webGL Conf (build 14(18)).loader.js"></script>
 		<script>
 			createUnityInstance(document.querySelector("#unity-canvas"), {
-				dataUrl: "Build/webGL Conf (build 13(17)).data",
-				frameworkUrl: "Build/webGL Conf (build 13(17)).framework.js",
-				codeUrl: "Build/webGL Conf (build 13(17)).wasm",
+				dataUrl: "Build/webGL Conf (build 14(18)).data",
+				frameworkUrl: "Build/webGL Conf (build 14(18)).framework.js",
+				codeUrl: "Build/webGL Conf (build 14(18)).wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "Cinema 101",
 				productName: "Stewart Filmscreen Config",
@@ -60,24 +60,17 @@
 					var w;
 					var h;
 
-					if (scaleToFit) {
+					
 						w = window.innerWidth;
-						h = window.innerHeight;
+						h = window.innerHeight - 122; //высота хедера
 
 						var r = 1080 / 1920;
-
-						if (w * r > window.innerHeight) {
-							w = Math.min(w, Math.ceil(h / r));
-						}
-						h = Math.floor(w * r);
-					} else {
-						w = 1920;
-						h = 1080;
-					}
+						
+					
 
 					container.style.width = canvas.style.width = w + "px";
 					container.style.height = canvas.style.height = h + "px";
-					container.style.top = 0 + "px";
+					container.style.top = 122 + "px";
 					container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
 				}
 
