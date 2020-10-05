@@ -120,6 +120,10 @@ th {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-right {
   text-align: right;
 }
@@ -550,6 +554,7 @@ tr {
   max-width: 805px;
   margin: 20px 0 20px 0;
   min-height: 95%;
+  overflow-y: auto;
 }
 
 .load-project_bg2 {
@@ -1093,6 +1098,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   font-size: 24px;
   line-height: 29px;
   color: #333333;
+  text-align: left;
 }
 
 .table-price__head {
@@ -1489,6 +1495,7 @@ input[type="password"].config-input::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
 }
 
 .drop-price-row div > .pricing-drop__btn {
