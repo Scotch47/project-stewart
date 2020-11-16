@@ -455,7 +455,7 @@ th {
 
 .disabled_link {
   color: #999999;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .disabled_link svg path {
@@ -1214,7 +1214,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .config-input:disabled {
   background: #F1F1F1;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .config-label {
@@ -1241,7 +1241,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
 
 .config-button:disabled {
   background: #858585;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 input[type="password"].config-input::-webkit-input-placeholder {
@@ -1468,8 +1468,28 @@ input[type="password"].config-input::placeholder {
   border-radius: 5px;
 }
 
+.edit-pricing-drop {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.13);
+  border-radius: 6px;
+  min-width: 487px;
+  height: auto !important;
+  border-radius: 5px;
+  z-index: 1;
+  outline: none;
+}
+
+.edit-pricing-drop h5 {
+  margin-bottom: 25px;
+}
+
 .config-row > .select2 select2-container .select2-container--default .select2-container--disabled .select2-container--focus {
   width: 400px !important;
+}
+
+.config-row:active, .config-row:focus {
+  outline: none;
 }
 
 .hide {
@@ -1512,6 +1532,14 @@ input[type="password"].config-input::placeholder {
 
 .drop-price-row div > .pricing-drop__btn--red {
   background: #C11C11;
+}
+
+.drop-price-row div > .pricing-drop__btn--trash {
+  background: #4911C1;
+}
+
+.edit-pricing-row {
+  margin: 30px 0 20px 0;
 }
 
 .modal .modal-footer {
