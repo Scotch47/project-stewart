@@ -1464,7 +1464,7 @@ input[type="password"].config-input::placeholder {
           box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.13);
   border-radius: 6px;
   min-width: 290px;
-  min-height: 303px;
+  height: auto !important;
   border-radius: 5px;
 }
 
@@ -1478,6 +1478,7 @@ input[type="password"].config-input::placeholder {
   border-radius: 5px;
   z-index: 1;
   outline: none;
+  right: 40px;
 }
 
 .edit-pricing-drop h5 {
@@ -1536,6 +1537,10 @@ input[type="password"].config-input::placeholder {
 
 .drop-price-row div > .pricing-drop__btn--trash {
   background: #4911C1;
+}
+
+.drop-price-row div > .pricing-drop__btn--share {
+  background: #FFC805;
 }
 
 .edit-pricing-row {

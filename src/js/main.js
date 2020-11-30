@@ -118,5 +118,10 @@ $('.dropRegToggle').on('click', function () {
 
 });
 
+$('.dropdown-trigger-price').dropdown({
+    closeOnClick: false,
+});
+
+
 $('.modal').modal();
 
