@@ -100,8 +100,15 @@ $(document).ready(function () {
     // drop-pricing
     $('.dropdown-trigger').dropdown({
         closeOnClick: false,
+        autoTrigger: false,
+        coverTrigger: false,
     });
 
+
+    $('.dropdown-trigger-dataBase').dropdown({
+        closeOnClick: false,
+    });
+    
     $('.dropdown-close').on('click', function () {
         $('.dropdown-trigger').dropdown('close')
 

@@ -313,7 +313,7 @@
                         <tr class="centered">
                           <td>AllRise
                           </td>
-                          <td>78 ¾</td>
+                          <td><input type="text" class="browser-default database-input"></td>
                           <td>140</td>
                           <td>161 </td>
                           <td></td>
@@ -333,9 +333,35 @@
                           <td></td>
 
                           <td class="custom-btn">
-                            <a href="#">
+                            <a href="#" class="dropdown-trigger-dataBase" data-target='dataBase-drop'>
                               <i class="material-icons more-btn">more_horiz</i>
                             </a>
+
+                            <ul id='dataBase-drop' class='dropdown-content pricing-drop'>
+                              <li><a href="#">Add Product</a></li>
+                              <li><a href="#">Edit Product</a></li>
+                              <li><a href="#">Duplicate</a></li>
+                              <li><a href="#">Print</a></li>
+                              <li><a href="#">Delete Product</a></li>
+
+                              <li class="divider" tabindex="-1"></li>
+
+                              <li class="drop-price-row">
+                                <div class="col s6">
+                                  <a href="#!" class="pricing-drop__btn pricing-drop__btn--green"><i
+                                      class="small material-icons">done</i></a>
+                                  <a href="#!" class="pricing-drop__btn pricing-drop__btn--red dropdown-close"><i
+                                      class="small material-icons">close</i></a>
+                                </div>
+                                <div class="col s6 text-right">
+                                  <a href="#!" class="pricing-drop__btn save-icon"><i
+                                      class="small material-icons">save</i></a>
+                                  <a href="#!" class="pricing-drop__btn pricing-drop__btn--share"><i
+                                      class="small material-icons">share</i></a>
+
+                                </div>
+                              </li>
+                            </ul>
                           </td>
                         </tr>
                         <tr class="centered">

@@ -1087,6 +1087,10 @@ input[type=search]:not(.browser-default):focus:not([readonly]) {
   color: #333333;
 }
 
+.database-input {
+  width: 100%;
+}
+
 .main-table-price {
   max-height: 550px;
   width: 100%;
