@@ -1354,6 +1354,7 @@ input[type="password"].config-input::placeholder {
 .select2-container--open .select2-dropdown {
   left: 0;
   top: -25px;
+  z-index: 1310;
 }
 
 .flag-group .select2-container--default .select2-selection--single .select2-selection__rendered {
